@@ -1,0 +1,1046 @@
+{
+  "version": "1.0",
+  "locations":[
+    "Outdoor Stage",
+    "Indoor Stage",
+    "Church Stage",
+    "Trains",
+    "Marquee"
+  ],
+  "artists": [
+    {
+      "name": "Saint Etienne",
+      "sortName": "saint etienne",
+      "image": "saintetienne.jpg",
+      "events": [
+        {
+          "start": "21:00",
+          "end": "22:15",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "http://www.saintetienne.com/",
+      "description": "Saint Etienne are a much-loved British trio made up of Sarah Cracknell, Pete Wiggs and Bob Stanley. Their debut album Foxbase Alpha was released in 1991, when their love of techno, the Beach Boys and classic English pop marked them out as something charmingly unique. Since then they have released eight albums, two of which reached the top ten of the UK album charts. During their career they have collaborated with a range of artists including Kylie Minogue and Tim Burgess of The Charlatans. Their most recent album Words and Music, produced with acclaimed music producer Richard X, received numerous glowing reviews, with Pitchfork calling it their “best LP since 1994 masterpiece Tiger Bay” and the NME saying “this record is the soundtrack to your life.”"
+    },
+    {
+      "name": "The Aislers Set",
+      "sortName": "aislers set",
+      "image": "aislerset.jpg",
+      "events": [
+        {
+          "start": "21:00",
+          "end": "22:15",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "http://www.aislersset.com/",
+      "music_url": "https://theaislersset.bandcamp.com/",
+      "description": "The Aislers Set are an American indiepop six-piece much loved by the late BBC Radio One DJ John Peel, with a huge cult following. Their three albums received wide critical acclaim from publications such as the NME, Pitchfork and Mojo, and they have toured with a myriad of bands including Yo La Tengo, Sleater-Kinney and Belle and Sebastian, with Stevie Jackson from Belle and Sebastian saying “They are one of the best groups in America as far as I’m concerned”. The band went on hiatus in 2003, reuniting briefly in 2012 and again in 2014 for a handful of shows on the west coast of America to celebrate the reissue of their albums. They haven’t played the UK since 2012 and Indietracks will be their only UK show this year. We’re hugely excited to welcome them to the festival!"
+    },
+    {
+      "name": "The Spook School",
+      "sortName": "spook school",
+      "image": "spookschool.jpg",
+      "url": "https://thespookschool.com/",
+      "music_url": "https://thespookschool.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-8-the-spook-school/",
+      "events": [
+        {
+          "start": "21:15",
+          "end": "22:15",
+          "day": "2016-07-29",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "description": "The Spook School’s latest album, Try To Be Hopeful, is brim full of noisy, tuneful and triumphant queer pop songs about identity, sexuality and being awesome. The Spook School are Anna Cory (bass and vocals), Adam Todd (guitar and vocals), Nye Todd (guitar and vocals) and Niall McCamley (drums).  Since forming in 2012 they’ve become increasingly involved with the DIY queer punk scene, taking inspiration from the passionate, like-minded people they’ve met along the way, and from bands such as Martha, Joanna Gruesome, Trust Fund and Tuff Love. Citing influences including Buzzcocks, T-Rex and the noisier end of C86, the new album is louder, bolder, fuller-sounding and captures more of their live sound—aided and abetted by producer MJ of Hookworms."
+    },
+    {
+      "name": "Emma Pollock",
+      "sortName": "emma pollock",
+      "image": "emmapollock.jpg",
+      "events": [
+        {
+          "start": "18:50",
+          "end": "19:40",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "http://emmapollock.com/",
+      "music_url": "http://www.chemikal.co.uk/artists/emma-pollock/",
+      "description": "Emma Pollock is the founder member of hugely popular Scottish indie rock band The Delgados. She released her first solo album, Watch the Fireworks, to critical acclaim in 2007 and since then has continued to build a successful career as a solo artist. She has been widely praised for her “ability to write convincing pop songs and straight-up beautiful tracks” (BBC), and for having “a lovely sense of melody, and a beautiful voice” (The Guardian). Emma released her third album, In Search of Harperfield, in January this year and we can’t wait to welcome her to Indietracks!"
+    },
+    {
+      "name": "Darren Hayman and the Secondary Modern",
+      "sortName": "darren hayman and the secondary modern",
+      "image": "darrenhayman.jpg",
+      "events": [
+        {
+          "start": "18:50",
+          "end": "19:40",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "http://hefnet.com/",
+      "music_url": "https://darrenhayman.bandcamp.com/album/darren-hayman-and-the-secondary-modern",
+      "description": "Darren Hayman is the former singer-songwriter of the phenomenally successful and much-loved Hefner. A hugely prolific artist, he has released 14 solo albums since 2006 and will be performing at Indietracks with his band The Secondary Modern. His solo records have covered a variety of topics, ranging from Essex life laments for lost lidos, to re-imagined 19th century political chants and, most recently, thankful villages – villages in England and Wales where every solider returned from World War One. The Guardian have described Hayman’s profoundly English songwriting as “the match of Ray Davies”, whilst Drowned in Sound consider him a “nationalised treasure.”"
+    },
+    {
+      "name": "Comet Gain",
+      "sortName": "comet gain",
+      "image": "cometgain.jpg",
+      "events": [
+        {
+          "start": "19:50",
+          "end": "20:45",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://www.fortunapop.com/artist_details.php?id=44",
+      "music_url": "https://soundcloud.com/fortuna-pop/comet-gain-sad-love-and-other-short-stori",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-6-comet-gain/",
+      "description": "Led by songwriter David Feck, Comet Gain have released a string of critically acclaimed records on Kill Rock Stars, Track & Field, What’s Your Rupture? and Fortuna Pop!, establishing the band as one of the most fearlessly passionate and fiercely intelligent British bands around. Unapologetically literate and emotional, Comet Gain seek out inspiration as much in the music of girl-group era pop, heartfelt Americana, British post-punk, and 60s psychedelia, as in the words and images of the beat poets and in the cinema of both the British and French new-wave of the late 50s and early 60s. The aesthetic they have made their own has chimed with and galvanized a slew of iconic bands and musicians; from artists like The Make-Up, The Yummy Fur, Jens Lekman and Herman Dune, to a younger generation of DIY musicians like The Cribs, Let’s Wrestle, Male Bonding, Love Is All, Veronica Falls, and Crystal Stilts, Comet Gain’s influence remains a traceable and tangible thing. "
+    },
+    {
+      "name": "The Lovely Eggs",
+      "sortName": "the lovely eggs",
+      "image": "loveleggs.jpg",
+      "events":[
+        {
+          "start": "19:50",
+          "end": "20:45",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://www.thelovelyeggs.co.uk/",
+      "music_url": "http://www.thelovelyeggs.co.uk/music.php",
+      "description": "The Lovely Eggs are an underground punk rock duo from northern England. They have a fierce punk rock ethos that music should have no rules. For Holly and David being in a band is a way of life. True to this, they live the way they play. Fiercely, constantly in search of the good times. With observational and often surreal lyrics about life The Lovely Eggs have a powerful stripped down sound: one vintage guitar amp, one Big Muff distortion pedal, a guitar and a drum kit. They have produced three albums. 2015 saw The Lovely Eggs return with their fourth self-produced and self-recorded album ‘This is Our Nowhere’: a title which sums up their celebration and love of a scene which doesn’t exist in the eyes of the manufactured mainstream. Ironically the record received 8/10 in the NME."
+    },
+    {
+      "name": "Alimony Hustle",
+      "sortName": "alimony hustle",
+      "image": "alimonyhustle.jpg",
+      "events":[
+        {
+          "start": "15:20",
+          "end": "16:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://alimonyhustle.bandcamp.com/",
+      "description": "Alimony Hustle are Leah and Matt. In their words, they’re a band for fans of: arguing over whether Harry or Zayn is more bangable (Zayn, in Louis Vuitton, June 2015); the 1998 version (ONLY) of ‘Football’s Coming Home’; screaming along to Joyce Manor, Little Big League and Carly Rae Jepsen (we pray our own songs find their spiritual home somewhere within this holy trinity of covers); seeing the guitar/drums duo reclaimed from crown prince jemble Jack White; and minions. "
+    },
+    {
+      "name": "¡Ay Carmela!",
+      "sortName": "ay carmela",
+      "events":[
+        {
+          "start": "16:00",
+          "end": "16:40",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "image": "aycarmela.jpg",
+      "url": "https://aycarmela.bandcamp.com/",
+      "description": "¡Ay Carmela! is a three piece DIY indie / punk band based in Uxbridge, west London. Inspired by 90s indie rock and punk, they sing about jobs, relationships, and social frustrations. Their single ‘Dog Tired’ was released in December 2014, and they have since toured the UK three times. Their first full length album will be released in spring 2016."
+    },
+    {
+      "name": "Bearsuit",
+      "sortName": "bearsuit",
+      "image": "bearsuit.jpg",
+      "events":[
+        {
+          "start": "18:25",
+          "end": "17:45",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "http://www.bearsuit.co.uk/",
+      "music_url": "http://www.bearsuit.co.uk/media/",
+      "description": "After splitting a few years back, Bearsuit have reformed for just two exclusive shows this summer. The John Peel faves will be playing ‘all the hits’ with their near original Cat Spectacular, Team Ping Pong and OH:IO line-up – Lisa, Cerian, Jan, Matt, Rich and Iain. Expect a flute, cornet, and accordion extravaganza with wonky synths, freaky beats and a whole lot of guitar feedback. “In an era when almost everything sounds quite like something else, Bearsuit are not quite like anything.” John Peel."
+    },
+    {
+      "name": "Boys Forever",
+      "sortName": "boys forever",
+      "image": "boysforever.jpg",
+      "events":[
+        {
+          "start": "15:40",
+          "end": "16:20",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/boysforeverandever/",
+      "music_url": "https://boysforever.bandcamp.com/",
+      "description": "Boys Forever is the new recording project from Patrick Doyle. Written in his South London living room and recorded in Glassell Park, LA the music of Boys Forever marks an exciting new chapter for Doyle, formerly of acclaimed doom pop quartet Veronica Falls. Effortlessly infectious yet spiked with bruised melancholy, these are sparkling, off-kilter gems for those who like their perfect pop with a bit of bite as well."
+    },
+    {
+      "name": "Charla Fantasma",
+      "sortName": "charla fantasma",
+      "image": "charlafantasma.jpg",
+      "events":[
+        {
+          "start": "15:00",
+          "end": "15:40",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/charlafantasma/",
+      "music_url": "https://charlafantasma.bandcamp.com/releases",
+      "description": "Charla Fantasma is a three-piece girl gang from London playing ghostly tunes while trying not to freak themselves out."
+    },
+    {
+      "name": "Chrissy Barnacle",
+      "sortName": "chrissy barnacle",
+      "image": "chrissy.jpg",
+      "events":[
+        {
+          "start": "14:20",
+          "end": "15:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://chrissybarnacle.tumblr.com/",
+      "music_url": "https://chrissybarnacle.bandcamp.com/",
+      "description": "Chrissy Barnacle is a singer-songwriter hailing from the grimey shores of the Clyde whose yearning and often fantastical lyrics are brimming with turmoil and optimism."
+    },
+    {
+      "name": "City Yelps",
+      "sortName": "city yelps",
+      "image": "cityyelps.jpg",
+      "events":[
+        {
+          "start": "13:00",
+          "end": "13:40",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://oddboxrecords.bandcamp.com/album/the-city-yelps-half-hour",
+      "music_url": "https://cityyelps.bandcamp.com/",
+      "description": "City Yelps are a three piece low budget psychedelic punk band from Leeds playing a mix up of discordant UK DIY, ’83 Mod Revival and Byrdsian jangle with a less-is-more approach to songwriting and recording. Their debut LP “The City Yelps Half Hour” has just been released by Odd Box records."
+    },
+    {
+      "name": "Deerful",
+      "sortName": "deerful",
+      "image": "deerful.jpg",
+      "events":[
+        {
+          "start": "16:20",
+          "end": "17:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://deerful.com/",
+      "music_url": "https://deerful.bandcamp.com/",
+      "description": "Deerful is Emma Winston. Emma is a singer, keyboardist and producer from London who, after years of playing keyboard with indiepop artists including Darren Hayman and Owl & Mouse, decided to begin making music of her own​ in 2015. She writes and performs story-led, melodic pop on miniature synthesisers about running away, staying in place, brokenness, recovery, and taking up space in the world, described by For The Rabbits as ‘like the music The Postal Service would have made if they’d not sent the tapes across the pond and stayed staring at the stars and dancing alone in a field’."
+    },
+    {
+      "name": "DIRTYGIRL",
+      "sortName": "dirtygirl",
+      "image": "dirtygirl.jpg",
+      "events":[
+        {
+          "start": "13:40",
+          "end": "14:20",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],"url": "https://wearedirtygirl.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-3-dirtygirl/",
+      "description": "DIRTYGIRL are a four piece rock and roll band that originally formed in York, England, in August 2015. Since then they have had around twelve different bassists, relocated to London, recorded an EP and a split tape with Crumbs and done lots of other fun things that are quite unbelievable for four girls that spend most of band practice eating lots of food and trying to play covers of Destiny’s Child songs.\nThey play pop music that has been called lots of different things, such as punk, riot grrrl and fuzz pop and write music to make people feel sassy and good about themselves and also some sad songs because sometimes people get sad, too."
+    },
+    {
+      "name": "Don't Falter DJs",
+      "sortName": "don't falter djs",
+      "image": "dontfalter.png",
+      "events":[
+        {
+          "start": "22:00",
+          "end": "23:59",
+          "day": "2016-07-29",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://dontfalterleeds.tumblr.com/",
+      "description": "Don’t Falter has been bringing the indiepop to the centre of That Leeds on the first Saturday of the month since 2010. They’re an incorrigible cast of assorted fools (including past and present members of Indietracks alumni This Many Boyfriends, The Loves, The Seven Inches and Finnmark) and they play stuff like Stereolab, Jens Lekman, HMHB, The Divine Comedy, Close Lobsters, Talking Heads, Suede, The Cardigans, Magnetic Fields, Ballboy, Longpigs, B&S, Jonathan Richman, Le Tigre and Hefner. And Pulp. In return, you dance your socks off (socks optional) whilst getting drunk. It’s a good formula apparently, so they’ll keep doing it until someone tells them to stop!"
+    },
+    {
+      "name": "Expert Alterations",
+      "sortName": "expert alterations",
+      "image": "expertalterations.jpg",
+      "events":[
+        {
+          "start": "18:00",
+          "end": "18:40",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/expertalterations1/",
+      "music_url": "https://expertalterations.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-2-expert-alterations/",
+      "description": "Expert Alterations are a jangle pop band from Baltimore, USA, founded in March of 2013 by Paul Krolian, Alan Everhart and Patrick Teal. Deadpan vocals mingle with sparkling, chiming guitars and an insistent rhythm borne out of the tenacious, nervous energy of The Fall. Expert Alterations’ influences range from the well-trod (TVPs, The Wedding Present) to roads less traveled (Yeah Yeah Noh, Close Lobsters) and they process them into songs that can stand side-by-side with such standard-bearers. The band has played shows with The Clean, Crystal Stilts and The Pains Of Being Pure At Heart."
+    },
+    {
+      "name": "Falling & Laughing",
+      "sortName": "falling and laughing",
+      "events":[
+        {
+          "start": "13:20",
+          "end": "14:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "image": "fallingandlaughing.jpg",
+      "url": "https://fallingandlaughing.bandcamp.com/",
+      "description": "Falling and Laughing are a Birmingham-ish two-piece who must be at least 10 years old by now. Along the way they’ve played popshows, toured, and released songs – including a semi-recent series of four track EPs that started with a release on Odd Box Records. Their occasional jangles invite more frequent comparisons with bands like The Wedding Present, but alongside a love of melody they introduce busy drumming, alternative guitar tunings, and have fun playing with the dynamics of a two-piece to create a mix of indie-pop and something-elses. "
+    },
+    {
+      "name": "Flowers",
+      "sortName": "flowers",
+      "image": "flowers.jpg",
+      "events":[
+        {
+          "start": "16:40",
+          "end": "17:20",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/flowersdomusic/",
+      "music_url": "https://flowersdomusic.bandcamp.com/",
+      "description": "Flowers started with guitarist Sam Ayres posting an advert stating he wanted to make pop songs like “early Madonna through a broken tape machine.” This led him to Rachel Kenedy, and their first batch of songs, polished up by none other than Bernard Butler, turned into debut Do What You Want To, It’s What You Should Do released in 2013. Created during a period of illness for Ayres, the result is an album that whilst receiving great critical acclaim, was necessarily subdued. Flowers have now returned in 2016 with their second album, For Everybody’s Dying to Meet You, produced by Brian O’Shaughnessey (The Clientele, Primal Scream, My Bloody Valentine). The album strikes a perfect balance between the sweetness of Kenedy’s voice and Ayres’ abrasive guitar stylings.  Their musical inspiration from shoegaze, C86 and New Zealand’s Flying Nun label is now evident."
+    },
+    {
+      "name": "Frankie Machine",
+      "sortName": "frankie machine",
+      "image": "frankie.jpg",
+      "events":[
+        {
+          "start": "15:15",
+          "end": "15:45",
+          "day": "2016-07-30",
+          "stage": "Trains"
+        }
+      ],
+      "url": "https://frankiemachine.bandcamp.com/",
+      "description": "Multi-instrumentalist Frankie Machine has appeared on stage over the years with an impressive list of indie royalty. In addition to White Town, Tompaulin and Phil Wilson, he’s also played Indietracks before with both MJ Hibbett and Airport Girl, and in 2011 played for the first time in his own right on the Church Stage. His music has been described as “sounds cut straight from the heart” by Drowned In Sound and “very, very special, like a secret on vinyl” by Record Collector and he is sure to captivate you with his beautiful, witty, musically ornate and sometimes surprisingly lurid songs. The new album “Frankie Machine Has Been Shipwrecked On A Desert Island” captures all this and more."
+    },
+    {
+      "name": "Gavin Osborn",
+      "sortName": "gavin osborn",
+      "image": "gavin.jpg",
+      "events":[
+        {
+          "start": "14:00",
+          "end": "14:30",
+          "day": "2016-07-31",
+          "stage": "Trains"
+        }
+      ],
+      "url": "https://www.facebook.com/gavosborn/",
+      "music_url": "https://soundcloud.com/gavin-osborn",
+      "description": "Gavin Osborn sings songs whilst playing an acoustic guitar. Groundbreaking stuff, right? But when he does it, it’s funny, moving, uplifting and beautiful. Like meeting a long-lost love on a train, then slipping in the aisle on a banana. “Funny and touching. Osborn walks a similar tightrope to Loudon Wainwright III but remains perfectly balanced” – Stewart Lee, The Sunday Times. “Completely wonderful. A genuine, wistful treat for anyone finding themselves past thirty and seeking a soundtrack to a good brew.” – The Quietus"
+    },
+    {
+      "name": "Girl Ray",
+      "sortName": "girl ray",
+      "image": "girlray.jpg",
+      "events":[
+        {
+          "start": "17:00",
+          "end": "17:40",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/girlraylondon/",
+      "music_url": "https://soundcloud.com/girlray",
+      "description": "A North London trio who deal in fuzzy pop gems that Moldy Peaches would still be making a name from, Girl Ray shape their love of off-kilter pop bands such as Neutral Milk Hotel, Pavement and Cate Le Bon in to a sound that feels instantly familiar and completely lovable. An endearing presence, full of promise."
+    },
+    {
+      "name": "GRLTLK DJs",
+      "sortName": "grltlk djs",
+      "image": "grltlk.jpg",
+      "url": "https://grltlkdjs.com/",
+      "events":[
+        {
+          "start": "22:15",
+          "end": "23:59",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "description": "GRLTLK play a mix of fun indie, 80s, pop, electro-pop. It’s all about dancing!"
+    },
+    {
+      "name": "Haiku Salut",
+      "sortName": "haiku salut",
+      "image": "haikusalut.jpg",
+      "events": [
+        {
+          "start": "17:45",
+          "end": "18:25",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://haikusalut.com/",
+      "music_url": "https://haikusalut.bandcamp.com/",
+      "description": "Haiku Salut are an instrumental dream-pop-post-folk-neo-everything trio from the Derbyshire Dales. Between them, they play accordion, piano, glockenspiel, trumpet, guitar, ukulele, drums, and melodica. Their music also features electronic elements, which they refer to as ‘loopery and laptopery’. Influenced by the evocative film soundtracks of Yann Tiersen and Benoît Charest, the genre-melting electronica of early Múm, and the impressionistic writing of Haruki Murakami, the band released their debut album Tricolore in 2013, to critical acclaim, and their follow up Etch And Etch Deep, was awarded four stars or above by The Observer, The Guardian, Mojo, Uncut and NME."
+    },
+    {
+      "name": "Helen McCookerybook",
+      "sortName": "helen mccookerybook",
+      "image": "helenmccookerybook.jpg",
+      "events":[
+        {
+          "start": "15:15",
+          "end": "15:45",
+          "day": "2016-07-31",
+          "stage": "Trains"
+        }
+      ],
+      "url": "http://www.mccookerybook.com/",
+      "music_url": "https://helenmccookerybook.bandcamp.com/",
+      "description": "Helen McCookerybook was bass player with punk band Joby and the Hooligans in 1977 before forming The Chefs in 1979, who had an indie hit with ’24 Hours’ and who were loved by the late John Peel. He also loved her next band, Helen and the Horns who recorded three sessions for his show. After a 20 year break, she is back as a solo artist, with three solo CDs (Suburban Pastoral,Poetry and Rhyme and the latest, Take One) and a co-release with Martin Stephenson (Hamilton Square). She wrote the Lost Women of Rock Music under the name of Helen Reddington, about the women who played instruments in punk bands in the late 1970s. Also look out for ‘Records and Tea: the Best of The Chefs’ on Damaged Goods and ‘The Cafe of Tiny Kindnesses’ out now on Barbaraville. "
+    },
+    {
+      "name": "Honey Joy",
+      "sortName": "honey joy",
+      "image": "honeyjoy.jpg",
+      "events":[
+        {
+          "start": "13:00",
+          "end": "13:40",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/HoneyJoyBand/",
+      "music_url": "https://honeyjoy.bandcamp.com",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-4-honey-joy/",
+      "description": "Honey joy are five friends from London who play indie/punk reminiscent of The Thermals, who fired Hutch, struck a deal with a witch doctor and raised Poly Styrene from the dead to replace him. Their first ep, ‘Feel Bad’ was released in August 2015 and three months later their second ep ‘Fixed Grins’ saw the light of day. They love Prince (RIP) and may change their name to Crisps, as it trumps any band name ever."
+    },
+    {
+      "name": "Humousexual",
+      "sortName": "humousexual",
+      "image": "humousexual.jpg",
+      "events":[
+        {
+          "start": "19:20",
+          "end": "20:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://www.everardrecords.com/humousexual/",
+      "music_url": "https://riotsnotdiets.bandcamp.com/track/humousexual-go-west",
+      "description": "Boitel & Victor are Humousexual. They’re based in the UK and Germany and play very rarely, so come and see them at Indietracks while you can! They’ve releases on Everard Records, Odd Box and Riots Not Diets. Rainbow Network described them as “a pair of pals who sing songs about friendship, love, boredom, and other everyday things. they use guitars, keyboards and very little else. to say that their style is unflashy is the understatement of the century, it’s completely laid back, lacking in ego, pomp or pretentiousness. what i like about their songs is the quiet humanity in them; this is a version of queer life that i can relate to, made by people who are disenfranchised by the whole muscle-mary-on-e generation. it’s emotionally literate, friendly, upbeat and, well, i can’t think of a better word than “charming” to describe it”. "
+    },
+    {
+      "name": "Iko Cherie",
+      "sortName": "iko cherie",
+      "image": "ikocherie.jpg",
+      "events":[
+        {
+          "start": "19:20",
+          "end": "20:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://elefant.com/bands/iko-cherie",
+      "music_url": "https://elefantrecords.bandcamp.com/album/dreaming-on",
+      "description": "Former Monade member Marie Merlet released her first solo album as Iko Chérie on Elefant Records (Camera Obscura, Le Mans) blending sixties soul sensitivity with French yéyé influences and fuzzy guitars. Now playing live as a girl trio, Iko Chérie’s sound is glazed with layers of honeyed atmosphere, sweet and hazy with surf overtones. They create a blissful nebulous ambiance, alternating hypnotic teenage ballads with indie pop gems, at times bringing to mind Olympia punk aesthetics, at times reminiscent of brazilian tropicalia."
+    },
+    {
+      "name": "Jessica and the Fletchers",
+      "sortName": "jessica and the fletchers",
+      "image": "Jessica.jpg",
+      "events":[
+        {
+          "start": "16:00",
+          "end": "16:40",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/JessicaAndTheFletchers/",
+      "music_url": "https://jessicaandthefletchers.bandcamp.com/",
+      "description": "Jessica & the Fletchers is a noisepop/c86 band from Barcelona. They released their debut album, Connecting People, on Discos de Kirlian in 2015 and have previously played shows at Primavera Sound and NYC Popfest."
+    },
+    {
+      "name": "Just Like Honey DJs",
+      "sortName": "just like honey djs",
+      "image": "justlikehoney.jpg",
+      "events":[
+        {
+          "start": "22:15",
+          "end": "23:59",
+          "day": "2016-07-30",
+          "stage": "Marquee"
+        }
+      ],
+      "url": "https://www.facebook.com/events/1729930837287948/",
+      "description": "Fueled by pints of Shropshire Lad and a Peelian keen radar for great music, Shrewsbury’s Just Like Honey is club night run by Shaun and John since 2013. We play indiepop, Northern Soul, 6T’s pop, Ye Ye, riot grrrl and loads loads more. You can expect to hear Tainted Love by Gloria Jones, The Passenger by Iggy Pop, Where’s me Jumper? by Sultans of Ping, Shout by Lulu and the Luvvers, Fun to Pretend by the Deirdres, some Sylvie Vartan and oodles oodles more. Based on a boyish enthusiasm for records and anarchic sentimentalism about the role of popular art, Just Like Honey is like an indie night, only better."
+    },
+    {
+      "name": "Lorna",
+      "sortName": "lorna",
+      "image": "lorna.png",
+      "events":[
+        {
+          "start": "14:00",
+          "end": "14:40",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://lornatheband.com/",
+      "music_url": "http://lornatheband.com/listen/",
+      "description": "Lorna, are a 6 piece who operate out of Nottingham UK formed in the late 1990s and release music on the US-based label Words on Music.  They have been compared to the likes of Teenage Fanclub, Stereolab, Yo La Tengo and The Velvet Underground.  Lorna have released 5 full length albums, several ep’s and singles and have also appeared on many compilations.  They have members from England, America, Norway and Israel."
+    },
+    {
+      "name": "Maggie8",
+      "sortName": "maggie8",
+      "image": "maggie8.jpg",
+      "events":[
+        {
+          "start": "14:00",
+          "end": "14:40",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://www.maggie8band.com/",
+      "music_url": "https://maggie8.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-1-maggie8/",
+      "description": "Maggie8 are an indie folk band from Leeds, featuring guitarist Mark Wright and singer Nivedita Pisharoty. Their sound juxtaposes Eastern harmonies, elements of Bollywood and Western sensibilities. Norman Records described their song ‘Hussain Bolt’ as “an absolute pop blast of a tune which puts the best bits of Cornershop, Animal Collective, Gruff Rhys, Cocteau Twins and (yes) Lily Allen into a mixing bowl, stirs rapidly and comes up with the kind of feel good summer tune that should be all over the airwaves if there was any justice in the world”."
+    },
+    {
+      "name": "Nervous Twitch",
+      "sortName": "nervous twitch",
+      "image": "nervoustwitch.png",
+      "url": "https://www.facebook.com/nervoustwitchband",
+      "music_url": "https://nervoustwitch.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-5-nervous-twitch/",
+      "events":[
+        {
+          "start": "19:00",
+          "end": "19:40",
+          "day": "2016-07-29",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "description": "Nervous Twitch are a four-piece from Yorkshire described as “a winning, fuzzy blend of garage-punk and pop hooks” mixing bands like The Ramones,  Au Pairs, The Cramps, Talulah Gosh, Blondie and Thee Headcoats and  pumping out “catchy songs full of hooky heartbreak, rumbling twang, post-punk-ish attitude and warm bouncy rock n’ roll”. 2016 has seen Twitch perform a live session for Marc Riley and live acoustic tracks for Mary Anne Hobbs’, both on BBC Radio 6 Music. Since 2013,  Twitch have played gigs with some familiar names including Sleaford Mods, Fat White Family, The Lovely Eggs, Shopping, Flamin’ Groovies, Kid Congo Powers and the Pink Monkey Birds. Recent releases include two albums on Odd Box Records, “Get Back In Line” (2015) and “Don’t Take My TV” (2016) and two 7” singles on Punk Fox Records."
+    },
+    {
+      "name": "Pete Green",
+      "sortName": "pete green",
+      "image": "petegreen.jpg",
+      "events":[
+        {
+          "start": "18:20",
+          "end": "19:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://petegreensolo.com/",
+      "music_url": "https://petegreen.bandcamp.com/",
+      "description": "Pete Green is a Sheffield-based singer/songwriter, poet, ineffectual layabout and king of the impossible. His career highlights include a minor internet hit in Germany with a song about MySpace (ask your parents), and making the sound go funny when his debut solo single ‘Everything I Do is Gonna Be Sparkly’ received airplay on BBC Radio 1. Pete also fronts indiepop underachievers The Sweet Nothings and wishes he was Scottish. He writes about coasts and islands, walking, getting lost, underachievement, love, railways, whisky, and rubbish football. His new solo album, a follow-up to 2013′s The Glass Delusion, is out this summer."
+    },
+    {
+      "name": "Po!",
+      "sortName": "po!",
+      "image": "po.jpg",
+      "events":[
+        {
+          "start": "17:00",
+          "end": "17:40",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://en.wikipedia.org/wiki/Po!",
+      "description": "This classic indie-pop band played a big part in the world of fanzines, DIY record pressing and worldwide mail order before the Internet was a thing. Ruth PO! started the band as well as being the founder of indie record label Rutland Records. Ruth PO!’s songs are great pop tunes  but often there’s a barbed edge in the lyrics. Songs such as ‘Sunday Never Comes Around’ and ‘Appleseed Alley’ are indie-pop gold, and the band will be playing some of the music that gained them a John Peel Session in 1994 and NME single of the week in 1997."
+    },
+    {
+      "name": "Ruth Po!",
+      "sortName": "ruth po!",
+      "image": "po.jpg",
+      "events":[
+        {
+          "start": "21:00",
+          "end": "20:20",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://en.wikipedia.org/wiki/Po!",
+      "description": "This classic indie-pop band played a big part in the world of fanzines, DIY record pressing and worldwide mail order before the Internet was a thing. Ruth PO! started the band as well as being the founder of indie record label Rutland Records. Ruth PO!’s songs are great pop tunes  but often there’s a barbed edge in the lyrics. Songs such as ‘Sunday Never Comes Around’ and ‘Appleseed Alley’ are indie-pop gold, and the band will be playing some of the music that gained them a John Peel Session in 1994 and NME single of the week in 1997."
+    },
+    {
+      "name": "Prizefighter",
+      "sortName": "prizefighter",
+      "image": "prizefighter.jpg",
+      "events":[
+        {
+          "start": "14:20",
+          "end": "15:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://www.prizefighterband.co.uk/",
+      "music_url": "https://prizefighteruk.bandcamp.com/",
+      "description": "Prizefighter are from Derby and they play noisy indie pop songs about family and personal relationships, life experiences, dreams and failures. With big drums. Live performances walk the fine line between sublime and shambolic with Ben Walker’s distinctive vocal style a perfect foil for the gentle melodies the band weave around his words. Over the last three or so years they have been lucky enough to support many of their indie heroes including the Jeffrey Lewis and Peter Stampfel Band, Tim Kasher, Lach, The Burning Hell, Withered Hand and Scott and Charlene’s Wedding."
+    },
+    {
+      "name": "Red Sleeping Beauty",
+      "sortName": "red sleeping beauty",
+      "image": "redsleepingbeauty.jpg",
+      "events":[
+        {
+          "start": "16:40",
+          "end": "17:20",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/redsleepingbeautymusic/",
+      "music_url": "https://soundcloud.com/redsleepingbeautymusic",
+      "description": "2016 is a big year for Swedish indiepop legends Red Sleeping Beauty. They’ll not only perform their first live concerts in 19 years, but they’ll also release their first album in 19 years! Red Sleeping Beauty formed in Stockholm in 1989 by singer Kristina Borg, singer/guitarist Niklas Angergård (Acid House Kings), guitarist Mikael Matsson (The Shermans), and bassist Carl-Johan Näsström. They made a huge impact on the international indiepop scene with two fantastic albums and a series of singles and EPs, on labels including Marsh Marigold, Somersault, Motorway, Grimsey, and Sunday and Siesta Records."
+    },
+    {
+      "name": "Robberie",
+      "sortName": "robberie",
+      "image": "robberie.jpg",
+      "events":[
+        {
+          "start": "16:15",
+          "end": "16:45",
+          "day": "2016-07-30",
+          "stage": "Trains"
+        }
+      ],
+      "url": "https://robberie.com/",
+      "music_url": "https://robberie.bandcamp.com/",
+      "description": "Sheffield-based Robberie play pretty, heartfelt songs you’ll instantly fall in love with. The acoustic trio of Val, Nik and Robin have put out two singles, ‘Four seasons/Academical’ and ‘Seven hills’ since they first appeared at Indietracks in 2012. They’re very excited that their debut album, ‘Beneath your city; as you dream…’, is finally being released in May this year. Expect glockenspiel-led acoustic pop and three-part harmonies combining to bring you the great train Robberie (part two). "
+    },
+    {
+      "name": "Kriss Foster",
+      "sortName": "kriss foster",
+      "image": "krissfoster.jpg",
+      "events":[
+        {
+          "start": "14:00",
+          "end": "14:30",
+          "day": "2016-07-30",
+          "stage": "Trains"
+        }
+      ],
+      "url": "http://www.krissfoster.co.uk/",
+      "music_url": "https://krissfoster.bandcamp.com/",
+      "description": "Kriss Foster is the lead singer of The Thyme Machine and this year he’s bringing his acoustic guitar to Indietracks for a solo set! Later this summer he’s taking a show called The Very Small Museum to Edinburgh fringe, and will be previewing this show on the train. With songs about taxidermy, the pencil museum and the man who feeds other people’s cats, his show is full of stories, songs and a very small museum. In his spare time he enjoys football, birdwatching, playing scrabble and entering pub quizzes."
+    },
+    {
+      "name": "Seazoo",
+      "sortName": "seazoo",
+      "image": "seazoo.jpg",
+      "events":[
+        {
+          "start": "15:40",
+          "end": "16:20",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/seazooband/",
+      "music_url": "https://seazoo.bandcamp.com/",
+      "description": "Seazoo are an act that started out as nothing more than a bedroom-recording project in 2013. Surprising momentum built however, as their Grandaddy / Yo La Tengo / SFA-inspired recordings began to gain support from the BBC. Huw Stephens, Lauren Laverne, Steve Lamacq, Mark Radcliffe have all played previous tunes from the Ken and Car Deborah EPs. Rather excellently, Marc Riley invited them to perform a live session for his 6 Music show in March 2015. They accepted, ferociously. Seazoo are currently busy promoting the new single ‘Telephone Jones’, taken from their EP ‘Jumbo’."
+    },
+    {
+      "name": "Scared To Dance DJs",
+      "sortName": "scared to dance djs",
+      "image": "scaredtodance.jpg",
+      "events":[
+        {
+          "start": "22:15",
+          "end": "23:59",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://www.scaredtodance.co.uk/",
+      "description": "Scared To Dance is a club, gig and film night based in Hackney, London founded in 2009.\nThe club is bi-monhtly and plays indiepop, post-punk, new wave and sixties music and has attracted the likes of Jon Ronson, Josie Long, Robin Ince, Gideon Coe, Simon Armitage and Pat Nevin behind the decks. We host a gig night which has been headlined by Allo Darlin’, The Wave Pictures, Darren Hayman, Withered Hand, Standard Fare, Shrag and many others. Our film nights are every other month at the arthouse Genesis Cinema showing music films and we also release monthly new music podcasts."
+    },
+    {
+      "name": "Simon Love and the Old Romantics",
+      "sortName": "simon love and the old romantics",
+      "image": "simonlove.jpg",
+      "url": "https://www.facebook.com/SimonLoveMusic/",
+      "music_url": "https://simonlove.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-7-simon-love-and-the-old-romantics/",
+      "start": "20:00",
+      "end": "20:45",
+      "day": "2016-07-29",
+      "stage": "Outdoor Stage",
+      "description": "Simon Love writes songs about girls, love, hate, Elton John and chopping off his penis. His LP “It Seemed Like A Good Idea At The Time” came out last year and was hailed as a breakthrough for modern living. This year he’s touring the world playing songs and getting lost in equal measure. He might/should have a new EP “Tennis Fan” out by the time he plays Indietracks."
+    },
+    {
+      "name": "Soda Fountain Rag",
+      "sortName": "soda fountain rag",
+      "image": "sodafountainrag.jpg",
+      "events":[
+        {
+          "start": "15:00",
+          "end": "15:40",
+          "day": "2016-07-30",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "http://sodafountainrag.blogspot.co.uk/",
+      "music_url": "https://sodafountainrag.bandcamp.com/",
+      "description": "Soda Fountain Rag is Ragnhild Hogstad Jordahl from Bergen, Norway. An indie-pop blast of naive, sharp and bittersweet lyrics for songs that rarely last over 3 minutes. From the rainiest city in the world straight to warm your heart. They are in the process of recording a third album. The previous ones, “It’s Rag Time!” and “Reel Around Me” are available on Spotify. The band are joined live by Alessando Paderno and Fabio Benni from Italy, and Moa Paulin from Sweden."
+    },
+    {
+      "name": "Songs for Walter",
+      "sortName": "songs for walter",
+      "image": "songsforwalter.jpg",
+      "events":[
+        {
+          "start": "16:20",
+          "end": "17:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://www.reddeerclub.co.uk/artists/songs-for-walter/",
+      "music_url": "https://songsforwalter.bandcamp.com/album/songs-for-walter",
+      "description": "They say youth is wasted on the young. It’s something Walter, the late grandfather of guitar-wielding and song-writing troubadour Laurie Hulme, would probably have agreed with. As nom-de-plume Songs For Walter, Laurie recounts his grandfather’s curious tales with a musical backdrop referencing Smog, The Magnetic Fields, Nick Drake and The Lemonheads. After releasing his eponymous debut back in January to critical acclaim, Laurie has brought Songs For Walter to life with shows up and down the country."
+    },
+    {
+      "name": "Sonic The Comic",
+      "sortName": "sonic the comic",
+      "image": "sonicthecomic.png",
+      "events":[
+        {
+          "start": "13:20",
+          "end": "14:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/SonicTheComic/",
+      "music_url": "https://sonicthecomic.bandcamp.com",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-9-sonic-the-comic/",
+      "description": "Sonic the Comic are Stef and Sarah, a chaotic-good videogame-indie-pop duo from Birmingham who mix energetic singing and fuzzy guitars with chiptune backing tracks. They released an album called Atoms last year which was a collection of songs about feeling tired all of the time and being nostalgic about playing old gameboy Zelda games growing up. Their new EP, Stabatha, is available now via Bandcamp on limited glitter cassette with a holographic cover!  "
+    },
+    {
+      "name": "Team Indietracks 10th Birthday Party DJs",
+      "sortName": "team indietracks 10th birthday party djs",
+      "image": "teamindietracks.jpg",
+      "events":[
+        {
+          "start": "22:15",
+          "end": "23:59",
+          "day": "2016-07-31",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "This year is the 10th Indietracks festival! We’ll be celebrating by playing some hits from bands that have played at the festival over the years, as well as some of our favourite songs. Come and join us for a dance and possibly some cake!"
+    },
+    {
+      "name": "The Charlie Tipper Conspiracy",
+      "sortName": "charlie tipper conspiracy",
+      "image": "charlietipper.jpg",
+      "events":[
+        {
+          "start": "14:40",
+          "end": "15:20",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/The-Charlie-Tipper-Conspiracy-424429434343247/",
+      "music_url": "https://thecharlietipperexperiment.bandcamp.com/",
+      "description": "The Charlie Tipper Conspiracy have a long Bristolian pedigree, with members previously playing for bands such as The Groove Farm, Flatmates, Five Year Plan and Beatnik Filmstars. Influenced by those with a strong song-writing tradition such as The Velvets, Go-Betweens and Shack, the band release their second long player “Ten” in April."
+    },
+    {
+      "name": "Trust Fund",
+      "sortName": "trust fund",
+      "image": "trustfund.jpg",
+      "events":[
+        {
+          "start": "18:00",
+          "end": "18:40",
+          "day": "2016-07-31",
+          "stage": "Indoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/trstfnd/",
+      "music_url": "https://trustfund.bandcamp.com/",
+      "description": "Trust Fund are an indie rock band from Bristol, now living all over the place, who try and make pop-punk as little fun as possible through lyrical self-absorption and having quiet bits where they aren’t needed or wanted. They released two albums last year, one of which was critically acclaimed, the other of which received fair to middling reviews. Their single ‘Football’ was described by the press office of Heart of Midlothian FC as “a really cheery song”, and by the press office of Ross County FC as a “weak song” with “weak vocals”. Decide for yourself!"
+    },
+    {
+      "name": "Two White Cranes",
+      "sortName": "two white cranes",
+      "image": "twowhitecranes.jpg",
+      "events":[
+        {
+          "start": "18:20",
+          "end": "19:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/twowhitecranes/",
+      "music_url": "https://twowhitecranes.bandcamp.com/",
+      "description": "Two white cranes is a project from Roxy Brennan (Joanna Gruesome, Grubs, Towel) describing everyday objects with delicate and dynamic songwriting. Aims to be wonky yet satisfying."
+    },
+    {
+      "name": "Vacacione",
+      "sortName": "vacacione",
+      "image": "vacaciones.png",
+      "events":[
+        {
+          "start": "14:40",
+          "end": "13:40",
+          "day": "2016-07-30",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/Vacaciones-Band-396825474065/",
+      "music_url": "https://vacaciones.bandcamp.com/",
+      "description": "Vacaciones are a 5-piece band based in Murcia (Spain), featuring Ruth (vocals), Rafa Skam (guitar), José Alberto (drums), Maria del Mar (keyboards and backing vocals) and Carlos 77 (bass). Formed in 1998, their sound is halfway through energetic, vibrant sixties pop and the sweetest indie pop with female vocals plus some punk-pop tantrums. They have released two seven-inches, two cd-singles and their first album, ‘Sonreir’, on Elefant Records; an EP, ‘Suelta los problemas ¡ya!’, on Discos de Paseo, and their second album, ‘Emmaboda’ on Discos Imprescindibles. Their third album, ‘Soy tu fan’, has just been released on the Discos de Kirlian label, and there will be soon an vinyl LP version on Hurrah! Música & Discos Para Getas."
+    },
+    {
+      "name": "White Town",
+      "sortName": "white town",
+      "image": "whitetown.jpg",
+      "events":[
+        {
+          "start": "16:15",
+          "end": "16:45",
+          "day": "2016-07-31",
+          "stage": "Trains"
+        }
+      ],
+      "url": "https://www.facebook.com/whitetownband",
+      "music_url": "http://www.whitetown.co.uk/",
+      "description": "White Town is best known for the song ‘Your Woman’ which became a surprise international hit in 1997. A mix of 1980s’ synths, 1930s’ jazz and sexually ambiguous lyrics, it was an unlikely chart-topper. After getting a very nasty rash from EMI, Jyoti Mishra used his filthy lucre to build his own studio and start a label, remaining insanely DIY ever since. Last year White Town released two iTunes singles, a 7″ on Golly Jane Records and an EP about lonely sailor astronauts. 2016 White Town goals: rock Indietracks, play house shows across the US, meet William Shatner."
+    },
+    {
+      "name": "Wintergreen",
+      "sortName": "wintergreen",
+      "image": "wintergreen.jpg",
+      "events":[
+        {
+          "start": "15:20",
+          "end": "16:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://www.iwantwintergreen.com/",
+      "music_url": "https://wintergreenmusic.bandcamp.com/",
+      "description": "After headlining the church stage at the first Indietracks in 2007, Wintergreen took a short break, did some grown-up stuff, built a studio and helped make some ace records for people like the Leaf Library, Cosines and Simon Love. In the midst of all that, they got around to finishing a proper full-length album of their very own. ‘The Rule of Small Things’ is out in April, and we’re really looking forward to it! "
+    },
+    {
+      "name": "Witching Waves",
+      "sortName": "witching waves",
+      "image": "witching.png",
+      "events":[
+        {
+          "start": "13:40",
+          "end": "14:20",
+          "day": "2016-07-31",
+          "stage": "Outdoor Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/witchingwaves/",
+      "music_url": "https://witchingwaves.bandcamp.com/",
+      "description": "Witching Waves are an atmospheric noise-pop band from London, featuring Emma Wigham, Mark Jasper, and Ed Shellard. They’ve so far released two albums on Soft Power records in the UK and HHBTM Records in the US, including their new album, Crystal Cafe. By the time they reach Indietracks, they’ll have already wowed crowds at New York Popfest and Wales Goes Pop. "
+    },
+    {
+      "name": "Secret Shine",
+      "sortName": "secret shine",
+      "image": "secretshine.jpg",
+      "events":[
+        {
+          "start": "20:20",
+          "end": "21:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "https://www.facebook.com/secretshine/",
+      "music_url": "https://secretshine.bandcamp.com/",
+      "description": "Secret Shine formed in 1991 and were signed to Sarah Records, with releases including the single Loveblind and the album Untouched. In 1996 they took a break but reappeared 10 years later with a reissue of their music (After Years) on US label Clairecords and subsequent new material (incl. ‘All of the Stars’ and ‘The Beginning And The End’) and various festival appearances followed. Having recently released a remastered Untouched with US label Saint Marie Records, Secret Shine have a new album coming out with them in in early 2017. This is their second Indietracks appearance (apart from as festival goers, when they have often been found enthusiastically showing off their dance moves at the indie disco). "
+    },
+    {
+      "name": "Indietracks: The Film (Jeanie Finlay Documentary)",
+      "sortName": "indietracks the film",
+      "image": "jeanie.jpg",
+      "events":[
+        {
+          "start": "17:20",
+          "end": "18:00",
+          "day": "2016-07-30",
+          "stage": "Church Stage"
+        },
+        {
+          "start": "17:20",
+          "end": "18:00",
+          "day": "2016-07-31",
+          "stage": "Church Stage"
+        }
+      ],
+      "url": "http://www.jeaniefinlay.com/wordpress/",
+      "interview_url": "http://www.indietracks.co.uk/interview-with-jeanie-finlay-director-of-the-indietracks-documentary/",
+      "description": "Indietracks is a 30 minute documentary about the festival focusing on the railway and everyone who works together to put Indietracks on every year! It has been directed by Nottingham-based film director Jeanie Finlay, director of numerous critically-acclaimed films including Sound It Out, The Great Hip Hop Hoax and Orion."
+    },
+    {
+      "name": "Boxing Clever",
+      "sortName": "boxing clever",
+      "image": "workshop.jpg",
+      "events":[
+        {
+          "start": "14:00",
+          "end": "14:45",
+          "day": "2016-07-30",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Come along and create a brilliant keepsake box using decoupage. Use paper, pictures, badges – whatever you want to bling it up! Lots of gluey, sticky, creative fun for indie kids of all ages! (£1 per person for materials)"
+    },
+    {
+      "name": "Family Dance Party at Indietracks ",
+      "sortName": "family dance party at indietracks ",
+      "image": "workshop.jpg",
+      "events":[
+        {
+          "start": "15:00",
+          "end": "15:45",
+          "day": "2016-07-30",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Join us at an indiepop party for lo-fi kids and their parents/carers! It’s a safe space for babies, toddlers and older children to have a shimmy way before bedtime, with a transport-themed playlist, rugs for the littlest ones to roll around on, and a few toys and crafts for those who don’t fancy getting their dancing shoes dirty. Come along and get practising for all those future indie discos. (Free)"
+    },
+    {
+      "name": "The Bumper Fun Book of Indietracks! ",
+      "sortName": "bumper fun book of indietracks",
+      "image": "workshop.jpg",
+      "events":[
+        {
+          "start": "16:00",
+          "end": "16:45",
+          "day": "2016-07-30",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Help us make a comic at Indietracks! Indietracks is 10 this year, and to celebrate, we want to record the history of the festival in your memories, tall tales and tiny moments of magic! Did you fall in love by the burrito stand, find yourself crammed into a tiny train carriage with your favourite band, or stumble into long-lost friends in the campsite disco? You don’t need to be able to draw to create a great comic, just enthusiastic and with a story to tell! After the workshop, we’ll scan your pages and compile them into one big comic that you can download after the festival and share with your friends. (Free)"
+    },
+    {
+      "name": "Niall is your life coach 2.0!!!",
+      "sortName": "niall is your life coach 2.0!!!",
+      "image": "nial.jpg",
+      "events":[
+        {
+          "start": "17:00",
+          "end": "17:45",
+          "day": "2016-07-30",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Last year Niall solved problems. This year he’s causing them! That’s right, it’s Niall, it’s life coaching, it’s 2.0! Niall from The Spook School (with secret guests, possibly, he hasn’t asked them yet) will attempt to coach you to greatness in a gazebo. (Free)"
+    },
+    {
+      "name": "All Aboard Children’s Poetry Walk and Workshop",
+      "sortName": "all aboard children’s poetry walk and workshop",
+      "image": "workshop.jpg",
+      "events":[
+        {
+          "start": "12:00",
+          "end": "12:45",
+          "day": "2016-07-31",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "The workshop is entirely interactive, with children sharing what they know about poetry before engaging in activities created to teach some fundamentals of poetry. The budding poets shall embark on a short walk to gather words, images, and sounds to create their own poem about Indietracks. Each child will leave with the workshop with a poem along with a magnet to display the poem on the refrigerator at home. (Recommended for children between the ages of 5-10 – Free)"
+    },
+    {
+      "name": "Give Them A Great Big Quiz",
+      "sortName": "give them a great big quiz",
+      "image": "workshop.jpg",
+      "events":[
+        {
+          "start": "3:00",
+          "end": "13:45",
+          "day": "2016-07-31",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Alright pop pickers? Do you have a wide music knowledge, from the Smiths to the Spice Girls? If so, form a team (max. 6 people) then answer lots of useless Indie and Pop trivia questions for a chance to win some goodies including a trophy. Your quiz hosts are Gareth (a former winning contestant on Radio 2′s Popmaster and forgotten TV show; Mark & Lard’s Pop Upstairs, Downstairs) & Rachael (a former winning contestant on BBC’s Mastermind, who chose Belle & Sebastian, Peel’s Festive Fifty and John Shuttleworth as her specialist subjects!)."
+    },
+    {
+      "name": "Printmaking Workshop – Tote Bags!",
+      "sortName": "printmaking workshop tote bags",
+      "events":[
+        {
+          "image": "totes.jpg",
+          "start": "14:00",
+          "end": "14:45",
+          "day": "2016-07-31",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Design your own Indietracks souvenir bag to jam full of souvenirs from the festival!\nCome along and try out two different types of printing either using lino stamps and found objects or have a go at a lo-fi no-emulsion screenprinting technique. This workshop is suitable for both adults and children, and will give you a great chance to get creative and make a mess! (Price – up to £5 for materials)"
+    },
+    {
+      "name": "Portraits by Salle Pierre Lamy",
+      "sortName": "portraits by salle pierre lamy",
+      "image": "sallepierre.jpg",
+      "events":[
+        {
+          "start": "15:00",
+          "end": "15:45",
+          "day": "2016-07-31",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "Come and have a FREE portrait drawn by professional artists; edgar (a glasses wearing cat) & Bryce (a potatoey pillowy fellow). (Free)"
+    },
+    {
+      "name": "Tea and Tasseomancy",
+      "sortName": "tea and tasseomancy",
+      "image": "workshop.jpg",
+      "events":[
+        {
+          "start": "16:00",
+          "end": "16:45",
+          "day": "2016-07-31",
+          "stage": "Marquee"
+        }
+      ],
+      "description": "A swish around the teacup and a fortune told by Rosie of Oh Peas!"
+    }
+  ]
+}
