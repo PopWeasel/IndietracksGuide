@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "DataVersion": "1.0",
   "locations":[
     "Outdoor Stage",
     "Indoor Stage",
@@ -471,7 +471,7 @@
     {
       "name": "Jessica and the Fletchers",
       "sortName": "jessica and the fletchers",
-      "image": "Jessica.jpg",
+      "image": "jessica.jpg",
       "events":[
         {
           "start": "16:00",
