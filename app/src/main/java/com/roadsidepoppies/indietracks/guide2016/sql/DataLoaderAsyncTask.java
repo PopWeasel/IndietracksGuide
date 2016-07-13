@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.Gravity;
 
 import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
+import com.roadsidepoppies.indietracks.guide2016.data.Location;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -89,7 +91,7 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
                 int newDataVersion = jsonData.getInt(IndietracksApplication.DATAVERSION);
                 if (newDataVersion > currentDataVersion) {
                     publishProgress("Updating data...");
-                    storeNewData(jsonData);
+                    storeNewData(jsonData, newDataVersion);
                     loaded = true;
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putInt(IndietracksApplication.DATAVERSION, newDataVersion);
@@ -143,7 +145,17 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
         return jsonData;
     }
 
-    void storeNewData(JSONObject jsonData) {
+    void storeNewData(JSONObject jsonData, int dataVersion) throws JSONException {
+        IndietracksDataHelper helper = new IndietracksDataHelper(activity.getApplicationContext(), dataVersion);
+        JSONArray locationList = jsonData.getJSONArray("locations");
+        for (int i = 0; i < locationList.length(); i++) {
+            int order = locationList.length() - i;
+            String locationName = locationList.getString(i);
+            Location location = new Location();
+            location.name = locationName;
+            location.sortOrder = order;
+            helper.addLocation(location);
+        }
 
     }
 
