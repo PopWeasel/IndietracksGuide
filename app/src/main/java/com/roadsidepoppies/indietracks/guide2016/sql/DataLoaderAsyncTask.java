@@ -151,11 +151,10 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
         IndietracksDataHelper helper = new IndietracksDataHelper(activity.getApplicationContext(), dataVersion);
         JSONArray locationList = jsonData.getJSONArray("locations");
         for (int i = 0; i < locationList.length(); i++) {
-            int order = locationList.length() - i;
             String locationName = locationList.getString(i);
             Location location = new Location();
             location.name = locationName;
-            location.sortOrder = order;
+            location.sortOrder = i;
             helper.addLocation(location);
         }
         ArrayList<Location> locations = helper.getLocations();

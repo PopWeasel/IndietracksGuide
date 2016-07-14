@@ -71,7 +71,9 @@ class LocationDAO implements BaseColumns {
             ContentValues values = new ContentValues();
             values.put("name", location.name);
             values.put("sort_order", location.sortOrder);
-            db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_IGNORE);
+            long status = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+            db.setTransactionSuccessful();
+            Log.d(TAG, "Inserted row " + status);
         } catch (Exception e) {
             Log.e(TAG, "Error creating location: " + e.getMessage());
             throw e;
@@ -120,11 +122,23 @@ class LocationDAO implements BaseColumns {
         Log.d(TAG, "Fetching locations");
         ArrayList<Location> locations = new ArrayList<>();
         String[] columns = {"name", "sort_order"};
-        Cursor cursor = db.query(TABLE_NAME, columns, null, null, null, null, null);
-        try {
+        Cursor cursor = db.query(TABLE_NAME, null, null, null, null, null, "sort_order");
+        Log.d(TAG, cursor.getCount() + " rows in DB");
+        if (cursor.getCount() > 0) {
+            try {
+                cursor.moveToFirst();
+                do {
+                    Location location = new Location();
+                    location.name = cursor.getString(cursor.getColumnIndexOrThrow(columns[0]));
+                    location.sortOrder = cursor.getInt(cursor.getColumnIndexOrThrow(columns[1]));
+                    locations.add(location);
+                    cursor.moveToNext();
+                } while (!cursor.isAfterLast());
 
-        } finally {
-            cursor.close();
+
+            } finally {
+                cursor.close();
+            }
         }
         Log.d(TAG, "Returning " + locations.size()  +  " locations");
         return locations;
