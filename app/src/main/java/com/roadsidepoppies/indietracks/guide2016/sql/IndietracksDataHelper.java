@@ -46,6 +46,12 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         LocationDAO.addLocation(db, location);
     }
+
+    public ArrayList<Location> getLocations() {
+        SQLiteDatabase db = getReadableDatabase();
+        ArrayList<Location> locations = LocationDAO.getLocations(db);
+        return  locations;
+    }
 }
 
 class LocationDAO implements BaseColumns {
@@ -60,6 +66,7 @@ class LocationDAO implements BaseColumns {
 
     public static void addLocation(SQLiteDatabase db, Location location) {
         db.beginTransaction();
+        Log.d(TAG, "Addling location " + location.name);
         try {
             ContentValues values = new ContentValues();
             values.put("name", location.name);
@@ -110,6 +117,7 @@ class LocationDAO implements BaseColumns {
     }
 
     public static ArrayList<Location> getLocations(SQLiteDatabase db) {
+        Log.d(TAG, "Fetching locations");
         ArrayList<Location> locations = new ArrayList<>();
         String[] columns = {"name", "sort_order"};
         Cursor cursor = db.query(TABLE_NAME, columns, null, null, null, null, null);
@@ -118,7 +126,7 @@ class LocationDAO implements BaseColumns {
         } finally {
             cursor.close();
         }
-
+        Log.d(TAG, "Returning " + locations.size()  +  " locations");
         return locations;
     }
 }

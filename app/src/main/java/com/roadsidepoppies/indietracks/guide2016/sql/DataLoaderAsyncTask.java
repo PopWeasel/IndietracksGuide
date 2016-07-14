@@ -25,6 +25,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -89,7 +90,8 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
             try {
                 int currentDataVersion = prefs.getInt(IndietracksApplication.DATAVERSION, 0);
                 int newDataVersion = jsonData.getInt(IndietracksApplication.DATAVERSION);
-                if (newDataVersion > currentDataVersion) {
+                if(true) {
+                //if (newDataVersion > currentDataVersion) {
                     publishProgress("Updating data...");
                     storeNewData(jsonData, newDataVersion);
                     loaded = true;
@@ -156,6 +158,8 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
             location.sortOrder = order;
             helper.addLocation(location);
         }
+        ArrayList<Location> locations = helper.getLocations();
+        locations.size();
 
     }
 
