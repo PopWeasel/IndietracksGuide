@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.Gravity;
 
 import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
+import com.roadsidepoppies.indietracks.guide2016.data.Artist;
+import com.roadsidepoppies.indietracks.guide2016.data.Event;
 import com.roadsidepoppies.indietracks.guide2016.data.Location;
 
 import org.json.JSONArray;
@@ -18,15 +19,20 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 /**
  * Created by maq on 12/07/2016.
@@ -39,6 +45,9 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
     private Activity activity;
     private Context context;
     private ProgressDialog dialog;
+    static SimpleDateFormat dayFormat = new SimpleDateFormat("yyyy-MM-dd");
+    static SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
 
     public DataLoaderAsyncTask(Activity activity) {
         this.activity = activity;
@@ -102,6 +111,15 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
             } catch (JSONException e) {
                 e.printStackTrace();
                 loaded = false;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                loaded = false;
+            } catch (ParseException e) {
+                e.printStackTrace();
+                loaded = false;
+            } catch (IndietracksDataException e) {
+                e.printStackTrace();
+                loaded = false;
             }
         }
         return loaded;
@@ -147,19 +165,88 @@ public class DataLoaderAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
         return jsonData;
     }
 
-    void storeNewData(JSONObject jsonData, int dataVersion) throws JSONException {
+    void storeNewData(JSONObject jsonData, int dataVersion) throws JSONException, MalformedURLException, ParseException, IndietracksDataException {
         IndietracksDataHelper helper = new IndietracksDataHelper(activity.getApplicationContext(), dataVersion);
         JSONArray locationList = jsonData.getJSONArray("locations");
-        for (int i = 0; i < locationList.length(); i++) {
-            String locationName = locationList.getString(i);
+        JSONArray artistList = jsonData.getJSONArray("artists");
+        Map<String, Location> locationMap =  storeLocations(helper, locationList);
+        storeArtistsAndEvents(helper, artistList, locationMap);
+    }
+
+    void storeArtistsAndEvents(IndietracksDataHelper helper, JSONArray artistList, Map locationMap) throws JSONException, MalformedURLException, ParseException, IndietracksDataException {
+        for (int i=0; i < artistList.length(); i++) {
+            JSONObject jsonArtist = artistList.getJSONObject(i);
+            Artist artist = new Artist();
+            artist.name = jsonArtist.getString("name");
+            artist.sortName = jsonArtist.getString("sortName");
+            if (jsonArtist.has("image")) {
+                artist.image = jsonArtist.getString("image");
+            }
+            if (jsonArtist.has("url")) {
+                artist.link = new URL(jsonArtist.getString("url"));
+            }
+            if (jsonArtist.has("music_url")) {
+                artist.musicLink = new URL(jsonArtist.getString("music_url"));
+            }
+            if (jsonArtist.has("interview_url")) {
+                artist.interviewLink = new URL(jsonArtist.getString("interview_url"));
+            }
+            if (jsonArtist.has("description")) {
+                artist.description = jsonArtist.getString("description");
+            }
+            if (jsonArtist.has("events")) {
+                addEvents(artist, locationMap, jsonArtist.getJSONArray("events"));
+            }
+            helper.addArtist(artist);
+        }
+    }
+
+    void addEvents(Artist artist, Map<String, Location> locationMap, JSONArray jsonEvents) throws JSONException, ParseException, IndietracksDataException {
+        for(int i=0; i < jsonEvents.length(); i++) {
+            JSONObject jsonEvent = jsonEvents.getJSONObject(i);
+            Event event = new Event();
+            String locationName = jsonEvent.getString("stage");
+            event.location = locationMap.get(locationName);
+            String dayString = jsonEvent.getString("day");
+            String startString = jsonEvent.getString("start");
+            String endString = jsonEvent.getString("end");
+            Date startDate = timeFormat.parse(startString);
+            Date endDate = timeFormat.parse(endString);
+            Date dayDate = dayFormat.parse(dayString);
+
+            Calendar start = new GregorianCalendar(TimeZone.getTimeZone(IndietracksApplication.TIMEZONE));
+            start.setTime(startDate);
+            event.start = start;
+
+            Calendar end = new GregorianCalendar(TimeZone.getTimeZone(IndietracksApplication.TIMEZONE));
+            end.setTime(endDate);
+            event.end = end;
+
+            Calendar day = new GregorianCalendar(TimeZone.getTimeZone(IndietracksApplication.TIMEZONE));
+            day.setTime(dayDate);
+            event.day = day;
+
+            long milliDuration =  end.getTimeInMillis() - start.getTimeInMillis();
+            event.duration = (int) (milliDuration / 60000l);
+
+            if (start.getTimeInMillis() > end.getTimeInMillis()) {
+                throw new IndietracksDataException("Data error with " + artist.name);
+
+            }
+            artist.events.add(event);
+        }
+    }
+
+    Map<String, Location> storeLocations(IndietracksDataHelper helper, JSONArray jsonLocations) throws JSONException {
+        Map<String, Location> locationMap = new HashMap<>();
+        for (int i = 0; i < jsonLocations.length(); i++) {
+            String locationName = jsonLocations.getString(i);
             Location location = new Location();
             location.name = locationName;
             location.sortOrder = i;
             helper.addLocation(location);
+            locationMap.put(location.name, location);
         }
-        ArrayList<Location> locations = helper.getLocations();
-        locations.size();
-
+        return locationMap;
     }
-
 }

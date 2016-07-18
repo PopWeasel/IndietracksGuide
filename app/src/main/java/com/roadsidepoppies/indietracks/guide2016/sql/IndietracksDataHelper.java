@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 import android.util.Log;
 
+import com.roadsidepoppies.indietracks.guide2016.data.Artist;
+import com.roadsidepoppies.indietracks.guide2016.data.Event;
 import com.roadsidepoppies.indietracks.guide2016.data.Location;
 
 import java.util.ArrayList;
@@ -52,6 +54,18 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         ArrayList<Location> locations = LocationDAO.getLocations(db);
         return  locations;
     }
+
+    public void addArtist(Artist artist) throws IndietracksDataException{
+        SQLiteDatabase db = getWritableDatabase();
+        long artistID = ArtistDAO.addArtist(db, artist);
+        for (Event event : artist.events) {
+            Log.d(TAG, "Adding event for " + artist.name);
+            long locationID = LocationDAO.getLocationIDByName(db, event.location.name);
+            long eventID = EventDAO.addEvent(db, event, locationID);
+            ArtistEventDAO.addArtistEvent(db, artistID, eventID);
+        }
+
+    }
 }
 
 class LocationDAO implements BaseColumns {
@@ -59,9 +73,10 @@ class LocationDAO implements BaseColumns {
     public final static String TABLE_NAME = "Locations";
     public final static String CREATE_TABLE =
                     "CREATE TABLE IF NOT EXISTS " + TABLE_NAME  + " ( " +
-                        " name TEXT NOT NULL UNIQUE, " +
-                        " sort_order INTEGER UNIQUE " +
-                        ");";
+                            " _id INTEGER PRIMARY KEY, " +
+                            " name TEXT NOT NULL UNIQUE, " +
+                            " sort_order INTEGER UNIQUE " +
+                            ");";
     public final static String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 
     public static void addLocation(SQLiteDatabase db, Location location) {
@@ -83,9 +98,9 @@ class LocationDAO implements BaseColumns {
     }
 
     public static int getLocationIDByName(SQLiteDatabase db, String name) throws IndietracksDataException{
-        String[] columns = {"_ID"};
+        String[] columns = {BaseColumns._ID};
         String[] queryArgs = {name};
-        Cursor cursor = db.query(TABLE_NAME, columns, "WHERE name = ?", queryArgs, null, null, null);
+        Cursor cursor = db.query(TABLE_NAME, columns, "name = ?", queryArgs, null, null, null);
         try {
             if (cursor.getCount() != 1) {
                 throw new IndietracksDataException("Failed to find location row matching '" + name + "'");
@@ -102,7 +117,7 @@ class LocationDAO implements BaseColumns {
         Location location;
         String[] columns = {"name", "sort_order"};
         String[] queryArgs = {Integer.toString(id)};
-        Cursor cursor = db.query(TABLE_NAME, columns, "WHERE _ID = ?", queryArgs, null, null, null);
+        Cursor cursor = db.query(TABLE_NAME, columns, BaseColumns._ID +" = ?", queryArgs, null, null, null);
         try {
             if (cursor.getCount() != 1) {
                 throw new IndietracksDataException("Failed to find location row matching '" + id + "'");
@@ -146,9 +161,11 @@ class LocationDAO implements BaseColumns {
 }
 
 class EventDAO implements BaseColumns {
+    public static final String TAG = "EventDAO";
     public final static String TABLE_NAME = "Events";
     public final static String CREATE_TABLE =
             "CREATE TABLE IF NOT EXISTS " + TABLE_NAME  + " ( " +
+                    " _id INTEGER PRIMARY KEY, " +
                     "start INTEGER, " +
                     "end INTEGER, " +
                     "duration INTEGER, " +
@@ -157,11 +174,38 @@ class EventDAO implements BaseColumns {
                     "FOREIGN KEY(location) REFERENCES locations(_ID) " +
                     ");";
     public final static String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
+
+    public static long addEvent(SQLiteDatabase db, Event event, long locationID) {
+        db.beginTransaction();
+        Log.d(TAG, "Addling event " + event.start.toString());
+        long artistID = -1;
+        try {
+            ContentValues values = new ContentValues();
+            values.put("start", event.start.getTimeInMillis());
+            values.put("end", event.end.getTimeInMillis());
+            values.put("day", event.day.getTimeInMillis());
+            values.put("duration", event.duration);
+            values.put("location", locationID);
+
+
+            artistID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+            db.setTransactionSuccessful();
+            Log.d(TAG, "Inserted row " + artistID);
+        } catch (Exception e) {
+            Log.e(TAG, "Error creating artist: " + e.getMessage());
+            throw e;
+        } finally {
+            db.endTransaction();
+        }
+        return artistID;
+    }
 }
 
 class ArtistDAO implements BaseColumns {
+    public static final String TAG = "ArtistDAO";
     public final static String TABLE_NAME = "Artists";
     public final static String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME  + " ( " +
+            " _id INTEGER PRIMARY KEY, " +
             "name TEXT UNIQUE NOT NULL, " +
             "sort_name TEXT NOT NULL, " +
             "image TEXT, " +
@@ -173,18 +217,74 @@ class ArtistDAO implements BaseColumns {
             "dislike INTEGER " +
             ");";
     public final static String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
+
+    public static long addArtist(SQLiteDatabase db, Artist artist) {
+        db.beginTransaction();
+        Log.d(TAG, "Addling artist " + artist.name);
+        long artistID = -1;
+        try {
+            ContentValues values = new ContentValues();
+            values.put("name", artist.name);
+            values.put("sort_name", artist.sortName);
+            values.put("image", artist.image);
+            values.put("description", artist.description);
+            if (artist.link != null) {
+                values.put("link", artist.link.toString());
+            }
+            if (artist.musicLink != null) {
+                values.put("music_link", artist.musicLink.toString());
+            }
+            if (artist.interviewLink != null) {
+                values.put("interview_ink", artist.interviewLink.toString());
+            }
+
+            artistID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+            db.setTransactionSuccessful();
+            Log.d(TAG, "Inserted row " + artistID);
+        } catch (Exception e) {
+            Log.e(TAG, "Error creating artist: " + e.getMessage());
+            throw e;
+        } finally {
+            db.endTransaction();
+        }
+        return artistID;
+    }
+
 }
 
 class ArtistEventDAO implements BaseColumns {
+    public final static String TAG = "ArtistEventDAO";
     public final static String TABLE_NAME = "ArtistEvents";
     public final static String CREATE_TABLE =
             "CREATE TABLE IF NOT EXISTS " + TABLE_NAME  + " ( " +
+                    " _id INTEGER PRIMARY KEY, " +
                     "artist INTEGER NOT NULL, " +
                     "event INTEGER NOT NULL, " +
                     "FOREIGN KEY(artist) REFERENCES artists(_ID), " +
                     "FOREIGN KEY(event) REFERENCES events(_ID) " +
                     ");";
     public final static String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
+
+    public static long addArtistEvent(SQLiteDatabase db, long artistID, long eventID) {
+        db.beginTransaction();
+        Log.d(TAG, "Addling artist-event " + artistID + " event " + eventID);
+        long rowID = -1;
+        try {
+            ContentValues values = new ContentValues();
+            values.put("artist", artistID);
+            values.put("event", eventID);
+
+            rowID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+            db.setTransactionSuccessful();
+            Log.d(TAG, "Inserted row " + artistID);
+        } catch (Exception e) {
+            Log.e(TAG, "Error creating artist-event: " + e.getMessage());
+            throw e;
+        } finally {
+            db.endTransaction();
+        }
+        return rowID;
+    }
 }
 
 
@@ -192,7 +292,8 @@ class AlarmDAO implements BaseColumns {
     public final static String TABLE_NAME = "Alarms";
     public final static String CREATE_TABLE =
             "CREATE TABLE IF NOT EXISTS " + TABLE_NAME  + " ( " +
-                    "event INTEGER NOT NULL, " +
+                    " _id INTEGER PRIMARY KEY, " +
+                    "event INTEGER NOT NULL UNIQUE, " +
                     "FOREIGN KEY(event) REFERENCES events(_ID) " +
                     ");";
     public final static String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;

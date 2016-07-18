@@ -1,5 +1,5 @@
 {
-  "DataVersion": "3",
+  "DataVersion": "5",
   "locations":[
     "Outdoor Stage",
     "Indoor Stage",
@@ -14,8 +14,8 @@
       "image": "saintetienne.jpg",
       "events": [
         {
-          "start": "21:00",
-          "end": "22:15",
+          "start": "2016-07-30 21:00",
+          "end": "2016-07-30 22:15",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -29,8 +29,8 @@
       "image": "aislerset.jpg",
       "events": [
         {
-          "start": "21:00",
-          "end": "22:15",
+          "start": "2016-07-31 21:00",
+          "end": "2016-07-31 22:15",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -48,8 +48,8 @@
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-8-the-spook-school/",
       "events": [
         {
-          "start": "21:15",
-          "end": "22:15",
+          "start": "2016-07-29 21:15",
+          "end": "2016-07-29 22:15",
           "day": "2016-07-29",
           "stage": "Outdoor Stage"
         }
@@ -62,8 +62,8 @@
       "image": "emmapollock.jpg",
       "events": [
         {
-          "start": "18:50",
-          "end": "19:40",
+          "start": "2016-07-30 18:50",
+          "end": "2016-07-30 19:40",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -78,8 +78,8 @@
       "image": "darrenhayman.jpg",
       "events": [
         {
-          "start": "18:50",
-          "end": "19:40",
+          "start": "2016-07-31 18:50",
+          "end": "2016-07-31 19:40",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -94,8 +94,8 @@
       "image": "cometgain.jpg",
       "events": [
         {
-          "start": "19:50",
-          "end": "20:45",
+          "start": "2016-07-31 19:50",
+          "end": "2016-07-31 20:45",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -111,8 +111,8 @@
       "image": "loveleggs.jpg",
       "events":[
         {
-          "start": "19:50",
-          "end": "20:45",
+          "start": "2016-07-30 19:50",
+          "end": "2016-07-30 20:45",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -127,8 +127,8 @@
       "image": "alimonyhustle.jpg",
       "events":[
         {
-          "start": "15:20",
-          "end": "16:00",
+          "start": "2016-07-31 15:20",
+          "end": "2016-07-31 16:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -141,8 +141,8 @@
       "sortName": "ay carmela",
       "events":[
         {
-          "start": "16:00",
-          "end": "16:40",
+          "start": "2016-07-31 16:00",
+          "end": "2016-07-31 16:40",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -157,8 +157,8 @@
       "image": "bearsuit.jpg",
       "events":[
         {
-          "start": "18:25",
-          "end": "17:45",
+          "start": "2016-07-30 17:45",
+          "end": "2016-07-30 18:25",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -173,8 +173,8 @@
       "image": "boysforever.jpg",
       "events":[
         {
-          "start": "15:40",
-          "end": "16:20",
+          "start": "2016-07-30 15:40",
+          "end": "2016-07-30 16:20",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -189,8 +189,8 @@
       "image": "charlafantasma.jpg",
       "events":[
         {
-          "start": "15:00",
-          "end": "15:40",
+          "start": "2016-07-31 15:00",
+          "end": "2016-07-31 15:40",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -205,8 +205,8 @@
       "image": "chrissy.jpg",
       "events":[
         {
-          "start": "14:20",
-          "end": "15:00",
+          "start": "2016-07-30 14:20",
+          "end": "2016-07-30 15:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -221,14 +221,15 @@
       "image": "cityyelps.jpg",
       "events":[
         {
-          "start": "13:00",
-          "end": "13:40",
+          "start": "2016-07-31 13:00",
+          "end": "2016-07-31 13:40",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
       ],
       "url": "https://oddboxrecords.bandcamp.com/album/the-city-yelps-half-hour",
       "music_url": "https://cityyelps.bandcamp.com/",
+      "inteview_url": "http://www.indietracks.co.uk/indietracks-interview-10-city-yelps/",
       "description": "City Yelps are a three piece low budget psychedelic punk band from Leeds playing a mix up of discordant UK DIY, ’83 Mod Revival and Byrdsian jangle with a less-is-more approach to songwriting and recording. Their debut LP “The City Yelps Half Hour” has just been released by Odd Box records."
     },
     {
@@ -237,8 +238,8 @@
       "image": "deerful.jpg",
       "events":[
         {
-          "start": "16:20",
-          "end": "17:00",
+          "start": "2016-07-31 16:20",
+          "end": "2016-07-31 17:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -253,8 +254,8 @@
       "image": "dirtygirl.jpg",
       "events":[
         {
-          "start": "13:40",
-          "end": "14:20",
+          "start": "2016-07-30 13:40",
+          "end": "2016-07-30 14:20",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -268,8 +269,8 @@
       "image": "dontfalter.png",
       "events":[
         {
-          "start": "22:00",
-          "end": "23:59",
+          "start": "2016-07-29 22:00",
+          "end": "2016-07-29 23:59",
           "day": "2016-07-29",
           "stage": "Indoor Stage"
         }
@@ -283,8 +284,8 @@
       "image": "expertalterations.jpg",
       "events":[
         {
-          "start": "18:00",
-          "end": "18:40",
+          "start": "2016-07-30 18:00",
+          "end": "2016-07-30 18:40",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -299,8 +300,8 @@
       "sortName": "falling and laughing",
       "events":[
         {
-          "start": "13:20",
-          "end": "14:00",
+          "start": "2016-07-30 13:20",
+          "end": "2016-07-30 14:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -315,8 +316,8 @@
       "image": "flowers.jpg",
       "events":[
         {
-          "start": "16:40",
-          "end": "17:20",
+          "start": "2016-07-30 16:40",
+          "end": "2016-07-30 17:20",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -331,8 +332,8 @@
       "image": "frankie.jpg",
       "events":[
         {
-          "start": "15:15",
-          "end": "15:45",
+          "start": "2016-07-30 15:15",
+          "end": "2016-07-30 15:45",
           "day": "2016-07-30",
           "stage": "Trains"
         }
@@ -346,8 +347,8 @@
       "image": "gavin.jpg",
       "events":[
         {
-          "start": "14:00",
-          "end": "14:30",
+          "start": "2016-07-31 14:00",
+          "end": "2016-07-31 14:30",
           "day": "2016-07-31",
           "stage": "Trains"
         }
@@ -362,8 +363,8 @@
       "image": "girlray.jpg",
       "events":[
         {
-          "start": "17:00",
-          "end": "17:40",
+          "start": "2016-07-31 17:00",
+          "end": "2016-07-31 17:40",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -379,8 +380,8 @@
       "url": "https://grltlkdjs.com/",
       "events":[
         {
-          "start": "22:15",
-          "end": "23:59",
+          "start": "2016-07-31 22:15",
+          "end": "2016-07-31 23:59",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -393,8 +394,8 @@
       "image": "haikusalut.jpg",
       "events": [
         {
-          "start": "17:45",
-          "end": "18:25",
+          "start": "2016-07-31 17:45",
+          "end": "2016-07-31 18:25",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -409,8 +410,8 @@
       "image": "helenmccookerybook.jpg",
       "events":[
         {
-          "start": "15:15",
-          "end": "15:45",
+          "start": "2016-07-31 15:15",
+          "end": "2016-07-31 15:45",
           "day": "2016-07-31",
           "stage": "Trains"
         }
@@ -425,8 +426,8 @@
       "image": "honeyjoy.jpg",
       "events":[
         {
-          "start": "13:00",
-          "end": "13:40",
+          "start": "2016-07-30 13:00",
+          "end": "2016-07-30 13:40",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -442,8 +443,8 @@
       "image": "humousexual.jpg",
       "events":[
         {
-          "start": "19:20",
-          "end": "20:00",
+          "start": "2016-07-31 19:20",
+          "end": "2016-07-31 20:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -458,8 +459,8 @@
       "image": "ikocherie.jpg",
       "events":[
         {
-          "start": "19:20",
-          "end": "20:00",
+          "start": "2016-07-30 19:20",
+          "end": "2016-07-30 20:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -474,8 +475,8 @@
       "image": "jessica.jpg",
       "events":[
         {
-          "start": "16:00",
-          "end": "16:40",
+          "start": "2016-07-30 16:00",
+          "end": "2016-07-30 16:40",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -490,8 +491,8 @@
       "image": "justlikehoney.jpg",
       "events":[
         {
-          "start": "22:15",
-          "end": "23:59",
+          "start": "2016-07-30 22:15",
+          "end": "2016-07-30 23:59",
           "day": "2016-07-30",
           "stage": "Marquee"
         }
@@ -505,8 +506,8 @@
       "image": "lorna.png",
       "events":[
         {
-          "start": "14:00",
-          "end": "14:40",
+          "start": "2016-07-31 14:00",
+          "end": "2016-07-31 14:40",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -521,8 +522,8 @@
       "image": "maggie8.jpg",
       "events":[
         {
-          "start": "14:00",
-          "end": "14:40",
+          "start": "2016-07-30 14:00",
+          "end": "2016-07-30 14:40",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -541,8 +542,8 @@
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-5-nervous-twitch/",
       "events":[
         {
-          "start": "19:00",
-          "end": "19:40",
+          "start": "2016-07-29 19:00",
+          "end": "2016-07-29 19:40",
           "day": "2016-07-29",
           "stage": "Outdoor Stage"
         }
@@ -555,8 +556,8 @@
       "image": "petegreen.jpg",
       "events":[
         {
-          "start": "18:20",
-          "end": "19:00",
+          "start": "2016-07-31 18:20",
+          "end": "2016-07-31 19:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -571,8 +572,8 @@
       "image": "po.jpg",
       "events":[
         {
-          "start": "17:00",
-          "end": "17:40",
+          "start": "2016-07-30 17:00",
+          "end": "2016-07-30 17:40",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -586,8 +587,8 @@
       "image": "po.jpg",
       "events":[
         {
-          "start": "21:00",
-          "end": "20:20",
+          "start": "2016-07-31 20:20",
+          "end": "2016-07-31 21:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -601,8 +602,8 @@
       "image": "prizefighter.jpg",
       "events":[
         {
-          "start": "14:20",
-          "end": "15:00",
+          "start": "2016-07-31 14:20",
+          "end": "2016-07-31 15:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -617,8 +618,8 @@
       "image": "redsleepingbeauty.jpg",
       "events":[
         {
-          "start": "16:40",
-          "end": "17:20",
+          "start": "2016-07-31 16:40",
+          "end": "2016-07-31 17:20",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -633,8 +634,8 @@
       "image": "robberie.jpg",
       "events":[
         {
-          "start": "16:15",
-          "end": "16:45",
+          "start": "2016-07-30 16:15",
+          "end": "2016-07-30 16:45",
           "day": "2016-07-30",
           "stage": "Trains"
         }
@@ -649,8 +650,8 @@
       "image": "krissfoster.jpg",
       "events":[
         {
-          "start": "14:00",
-          "end": "14:30",
+          "start": "2016-07-30 14:00",
+          "end": "2016-07-30 14:30",
           "day": "2016-07-30",
           "stage": "Trains"
         }
@@ -665,8 +666,8 @@
       "image": "seazoo.jpg",
       "events":[
         {
-          "start": "15:40",
-          "end": "16:20",
+          "start": "2016-07-31 15:40",
+          "end": "2016-07-31 16:20",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -681,8 +682,8 @@
       "image": "scaredtodance.jpg",
       "events":[
         {
-          "start": "22:15",
-          "end": "23:59",
+          "start": "2016-07-30 22:15",
+          "end": "2016-07-30 23:59",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -697,8 +698,8 @@
       "url": "https://www.facebook.com/SimonLoveMusic/",
       "music_url": "https://simonlove.bandcamp.com/",
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-7-simon-love-and-the-old-romantics/",
-      "start": "20:00",
-      "end": "20:45",
+      "start": "2016-07-29 20:00",
+      "end": "2016-07-29 20:45",
       "day": "2016-07-29",
       "stage": "Outdoor Stage",
       "description": "Simon Love writes songs about girls, love, hate, Elton John and chopping off his penis. His LP “It Seemed Like A Good Idea At The Time” came out last year and was hailed as a breakthrough for modern living. This year he’s touring the world playing songs and getting lost in equal measure. He might/should have a new EP “Tennis Fan” out by the time he plays Indietracks."
@@ -709,8 +710,8 @@
       "image": "sodafountainrag.jpg",
       "events":[
         {
-          "start": "15:00",
-          "end": "15:40",
+          "start": "2016-07-30 15:00",
+          "end": "2016-07-30 15:40",
           "day": "2016-07-30",
           "stage": "Indoor Stage"
         }
@@ -725,8 +726,8 @@
       "image": "songsforwalter.jpg",
       "events":[
         {
-          "start": "16:20",
-          "end": "17:00",
+          "start": "2016-07-30 16:20",
+          "end": "2016-07-30 17:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -741,8 +742,8 @@
       "image": "sonicthecomic.png",
       "events":[
         {
-          "start": "13:20",
-          "end": "14:00",
+          "start": "2016-07-31 13:20",
+          "end": "2016-07-31 14:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -758,8 +759,8 @@
       "image": "teamindietracks.jpg",
       "events":[
         {
-          "start": "22:15",
-          "end": "23:59",
+          "start": "2016-07-31 22:15",
+          "end": "2016-07-31 23:59",
           "day": "2016-07-31",
           "stage": "Marquee"
         }
@@ -772,8 +773,8 @@
       "image": "charlietipper.jpg",
       "events":[
         {
-          "start": "14:40",
-          "end": "15:20",
+          "start": "2016-07-31 14:40",
+          "end": "2016-07-31 15:20",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -788,8 +789,8 @@
       "image": "trustfund.jpg",
       "events":[
         {
-          "start": "18:00",
-          "end": "18:40",
+          "start": "2016-07-31 18:00",
+          "end": "2016-07-31 18:40",
           "day": "2016-07-31",
           "stage": "Indoor Stage"
         }
@@ -804,8 +805,8 @@
       "image": "twowhitecranes.jpg",
       "events":[
         {
-          "start": "18:20",
-          "end": "19:00",
+          "start": "2016-07-30 18:20",
+          "end": "2016-07-30 19:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -820,8 +821,8 @@
       "image": "vacaciones.png",
       "events":[
         {
-          "start": "14:40",
-          "end": "13:40",
+          "start": "2016-07-30 14:40",
+          "end": "2016-07-30 15:20",
           "day": "2016-07-30",
           "stage": "Outdoor Stage"
         }
@@ -836,8 +837,8 @@
       "image": "whitetown.jpg",
       "events":[
         {
-          "start": "16:15",
-          "end": "16:45",
+          "start": "2016-07-31 16:15",
+          "end": "2016-07-31 16:45",
           "day": "2016-07-31",
           "stage": "Trains"
         }
@@ -852,8 +853,8 @@
       "image": "wintergreen.jpg",
       "events":[
         {
-          "start": "15:20",
-          "end": "16:00",
+          "start": "2016-07-30 15:20",
+          "end": "2016-07-30 16:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -868,8 +869,8 @@
       "image": "witching.png",
       "events":[
         {
-          "start": "13:40",
-          "end": "14:20",
+          "start": "2016-07-31 13:40",
+          "end": "2016-07-31 14:20",
           "day": "2016-07-31",
           "stage": "Outdoor Stage"
         }
@@ -884,8 +885,8 @@
       "image": "secretshine.jpg",
       "events":[
         {
-          "start": "20:20",
-          "end": "21:00",
+          "start": "2016-07-30 20:20",
+          "end": "2016-07-30 21:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         }
@@ -900,14 +901,14 @@
       "image": "jeanie.jpg",
       "events":[
         {
-          "start": "17:20",
-          "end": "18:00",
+          "start": "2016-07-30 17:20",
+          "end": "2016-07-30 18:00",
           "day": "2016-07-30",
           "stage": "Church Stage"
         },
         {
-          "start": "17:20",
-          "end": "18:00",
+          "start": "2016-07-31 17:20",
+          "end": "2016-07-31 18:00",
           "day": "2016-07-31",
           "stage": "Church Stage"
         }
@@ -922,8 +923,8 @@
       "image": "workshop.jpg",
       "events":[
         {
-          "start": "14:00",
-          "end": "14:45",
+          "start": "2016-07-30 14:00",
+          "end": "2016-07-30 14:45",
           "day": "2016-07-30",
           "stage": "Marquee"
         }
@@ -936,8 +937,8 @@
       "image": "workshop.jpg",
       "events":[
         {
-          "start": "15:00",
-          "end": "15:45",
+          "start": "2016-07-30 15:00",
+          "end": "2016-07-30 15:45",
           "day": "2016-07-30",
           "stage": "Marquee"
         }
@@ -950,8 +951,8 @@
       "image": "workshop.jpg",
       "events":[
         {
-          "start": "16:00",
-          "end": "16:45",
+          "start": "2016-07-30 16:00",
+          "end": "2016-07-30 16:45",
           "day": "2016-07-30",
           "stage": "Marquee"
         }
@@ -964,8 +965,8 @@
       "image": "nial.jpg",
       "events":[
         {
-          "start": "17:00",
-          "end": "17:45",
+          "start": "2016-07-30 17:00",
+          "end": "2016-07-30 17:45",
           "day": "2016-07-30",
           "stage": "Marquee"
         }
@@ -978,8 +979,8 @@
       "image": "workshop.jpg",
       "events":[
         {
-          "start": "12:00",
-          "end": "12:45",
+          "start": "2016-07-31 12:00",
+          "end": "2016-07-31 12:45",
           "day": "2016-07-31",
           "stage": "Marquee"
         }
@@ -992,8 +993,8 @@
       "image": "workshop.jpg",
       "events":[
         {
-          "start": "3:00",
-          "end": "13:45",
+          "start": "2016-07-31 13:00",
+          "end": "2016-07-31 13:45",
           "day": "2016-07-31",
           "stage": "Marquee"
         }
@@ -1006,8 +1007,8 @@
       "events":[
         {
           "image": "totes.jpg",
-          "start": "14:00",
-          "end": "14:45",
+          "start": "2016-07-31 14:00",
+          "end": "2016-07-31 14:45",
           "day": "2016-07-31",
           "stage": "Marquee"
         }
@@ -1020,8 +1021,8 @@
       "image": "sallepierre.jpg",
       "events":[
         {
-          "start": "15:00",
-          "end": "15:45",
+          "start": "2016-07-31 15:00",
+          "end": "2016-07-31 15:45",
           "day": "2016-07-31",
           "stage": "Marquee"
         }
@@ -1034,8 +1035,8 @@
       "image": "workshop.jpg",
       "events":[
         {
-          "start": "16:00",
-          "end": "16:45",
+          "start": "2016-07-31 16:00",
+          "end": "2016-07-31 16:45",
           "day": "2016-07-31",
           "stage": "Marquee"
         }

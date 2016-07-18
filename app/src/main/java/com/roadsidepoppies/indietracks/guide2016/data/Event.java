@@ -1,14 +1,15 @@
 package com.roadsidepoppies.indietracks.guide2016.data;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
  * Created by maq on 12/07/2016.
  */
 public class Event {
-    public Date start;
-    public Date end;
-    public Date day;
-    public Date duration;
+    public Calendar start;
+    public Calendar end;
+    public Calendar day;
+    public int duration;
     public Location location;
 }
