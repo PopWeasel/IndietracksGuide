@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.roadsidepoppies.indietracks.guide2016.sql.DataLoaderAsyncTask;
+import com.roadsidepoppies.indietracks.guide2016.sql.DataToSQLAsyncTask;
 
 /**
  * Created by maq on 12/07/2016.
@@ -18,6 +18,6 @@ public class InitialiseDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        new DataLoaderAsyncTask(this).execute(false);
+        new DataToSQLAsyncTask(this).execute(false);
     }
 }

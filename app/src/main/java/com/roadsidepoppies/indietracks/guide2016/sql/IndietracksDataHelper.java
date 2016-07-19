@@ -8,11 +8,21 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 import android.util.Log;
 
+import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
 import com.roadsidepoppies.indietracks.guide2016.data.Artist;
 import com.roadsidepoppies.indietracks.guide2016.data.Event;
+import com.roadsidepoppies.indietracks.guide2016.data.Festival;
 import com.roadsidepoppies.indietracks.guide2016.data.Location;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TimeZone;
 
 /**
  * Created by maq on 12/07/2016.
@@ -49,7 +59,7 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         LocationDAO.addLocation(db, location);
     }
 
-    public ArrayList<Location> getLocations() {
+    public List<Location> getLocations() {
         SQLiteDatabase db = getReadableDatabase();
         ArrayList<Location> locations = LocationDAO.getLocations(db);
         return  locations;
@@ -64,7 +74,31 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
             long eventID = EventDAO.addEvent(db, event, locationID);
             ArtistEventDAO.addArtistEvent(db, artistID, eventID);
         }
+    }
 
+    public Festival getFestivalData() throws MalformedURLException {
+        SQLiteDatabase db = getReadableDatabase();
+        Festival festival = new Festival();
+        List<Location> locations = getLocations();
+        Map<Long, Location> locationIdMap = new HashMap<>();
+        for (Location location : locations) {
+            locationIdMap.put(location.identifier, location);
+        }
+        List<Event> events = EventDAO.getEvents(db, locationIdMap);
+        Map<Long, Event> eventIdMap = new HashMap<>();
+        for (Event event : events) {
+            eventIdMap.put(event.identifier, event);
+        }
+        List<Artist> artists = ArtistDAO.getArtists(db);
+        Map<Long, Artist> artistIdMap = new HashMap<>();
+        for(Artist artist : artists) {
+            artistIdMap.put(artist.identifier, artist);
+        }
+        //ArtistEventDAO.getArtistEvents(db, artistIdMap, eventIdMap);
+        festival.locations = locations;
+        festival.events = events;
+        festival.artists = artists;
+        return festival;
     }
 }
 
@@ -115,17 +149,17 @@ class LocationDAO implements BaseColumns {
 
     public static Location getLocationByID(SQLiteDatabase db, int id) throws IndietracksDataException {
         Location location;
-        String[] columns = {"name", "sort_order"};
         String[] queryArgs = {Integer.toString(id)};
-        Cursor cursor = db.query(TABLE_NAME, columns, BaseColumns._ID +" = ?", queryArgs, null, null, null);
+        Cursor cursor = db.query(TABLE_NAME, null, BaseColumns._ID +" = ?", queryArgs, null, null, null);
         try {
             if (cursor.getCount() != 1) {
                 throw new IndietracksDataException("Failed to find location row matching '" + id + "'");
             } else {
                 cursor.moveToFirst();
                 location = new Location();
-                location.name = cursor.getString(cursor.getColumnIndexOrThrow(columns[0]));
-                location.sortOrder = cursor.getInt(cursor.getColumnIndexOrThrow(columns[1]));
+                location.identifier = cursor.getLong(cursor.getColumnIndexOrThrow("_id"));
+                location.name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+                location.sortOrder = cursor.getInt(cursor.getColumnIndexOrThrow("sort_order"));
             }
         } finally {
             cursor.close();
@@ -136,16 +170,17 @@ class LocationDAO implements BaseColumns {
     public static ArrayList<Location> getLocations(SQLiteDatabase db) {
         Log.d(TAG, "Fetching locations");
         ArrayList<Location> locations = new ArrayList<>();
-        String[] columns = {"name", "sort_order"};
-        Cursor cursor = db.query(TABLE_NAME, null, null, null, null, null, "sort_order");
+        String[] columns = {"_id", "name", "sort_order"};
+        Cursor cursor = db.query(TABLE_NAME, columns, null, null, null, null, "sort_order");
         Log.d(TAG, cursor.getCount() + " rows in DB");
         if (cursor.getCount() > 0) {
             try {
                 cursor.moveToFirst();
                 do {
                     Location location = new Location();
-                    location.name = cursor.getString(cursor.getColumnIndexOrThrow(columns[0]));
-                    location.sortOrder = cursor.getInt(cursor.getColumnIndexOrThrow(columns[1]));
+                    location.identifier = cursor.getLong(cursor.getColumnIndexOrThrow(columns[0]));
+                    location.name = cursor.getString(cursor.getColumnIndexOrThrow(columns[1]));
+                    location.sortOrder = cursor.getInt(cursor.getColumnIndexOrThrow(columns[2]));
                     locations.add(location);
                     cursor.moveToNext();
                 } while (!cursor.isAfterLast());
@@ -199,6 +234,51 @@ class EventDAO implements BaseColumns {
         }
         return artistID;
     }
+
+    public static List<Event> getEvents(SQLiteDatabase db, Map<Long, Location> locationMap) {
+        Log.d(TAG, "Fetching events");
+        List<Event> events = new ArrayList<>();
+        String[] columns = {"_id", "start", "end", "day", "duration", "location"};
+        Cursor cursor = db.query(TABLE_NAME, columns, null, null, null, null, "start");
+        Log.d(TAG, cursor.getCount() + " rows in DB");
+        if (cursor.getCount() > 0) {
+            try {
+                Map<Long, Calendar> millisecondsDayMap = new HashMap<>();
+                cursor.moveToFirst();
+                do {
+                    Event event = new Event();
+                    event.identifier = cursor.getLong(cursor.getColumnIndexOrThrow(columns[0]));
+                    Calendar start = new GregorianCalendar(TimeZone.getTimeZone(IndietracksApplication.TIMEZONE));
+                    start.setTimeInMillis(cursor.getLong(cursor.getColumnIndexOrThrow(columns[1])));
+                    event.start = start;
+
+                    Calendar end = new GregorianCalendar(TimeZone.getTimeZone(IndietracksApplication.TIMEZONE));
+                    end.setTimeInMillis(cursor.getLong(cursor.getColumnIndexOrThrow(columns[2])));
+                    event.end = end;
+                    //re-use same day object across all events
+                    Calendar day;
+                    Long millisecsDay = cursor.getLong(cursor.getColumnIndexOrThrow(columns[3]));
+                    if (millisecondsDayMap.containsKey(millisecsDay)) {
+                        day = millisecondsDayMap.get(millisecsDay);
+                    } else {
+                        day = new GregorianCalendar(TimeZone.getTimeZone(IndietracksApplication.TIMEZONE));
+                        day.setTimeInMillis(millisecsDay);
+                        millisecondsDayMap.put(millisecsDay, day);
+                    }
+                    event.day = day;
+
+                    event.duration = cursor.getInt(cursor.getColumnIndexOrThrow(columns[4]));
+                    event.location = locationMap.get(cursor.getLong(cursor.getColumnIndexOrThrow(columns[5])));
+                    events.add(event);
+                    cursor.moveToNext();
+                } while (!cursor.isAfterLast());
+            } finally {
+                cursor.close();
+            }
+        }
+        Log.d(TAG, "Returning " + events.size()  +  " events");
+        return events;
+    }
 }
 
 class ArtistDAO implements BaseColumns {
@@ -212,7 +292,7 @@ class ArtistDAO implements BaseColumns {
             "description TEXT, " +
             "link TEXT, " +
             "music_link TEXT, " +
-            "interview_ink TEXT, " +
+            "interview_link TEXT, " +
             "like INTEGER, " +
             "dislike INTEGER " +
             ");";
@@ -221,7 +301,7 @@ class ArtistDAO implements BaseColumns {
     public static long addArtist(SQLiteDatabase db, Artist artist) {
         db.beginTransaction();
         Log.d(TAG, "Addling artist " + artist.name);
-        long artistID = -1;
+        long rowID = -1;
         try {
             ContentValues values = new ContentValues();
             values.put("name", artist.name);
@@ -235,21 +315,59 @@ class ArtistDAO implements BaseColumns {
                 values.put("music_link", artist.musicLink.toString());
             }
             if (artist.interviewLink != null) {
-                values.put("interview_ink", artist.interviewLink.toString());
+                values.put("interview_link", artist.interviewLink.toString());
             }
 
-            artistID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+            rowID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
             db.setTransactionSuccessful();
-            Log.d(TAG, "Inserted row " + artistID);
+            Log.d(TAG, "Inserted row " + rowID);
         } catch (Exception e) {
             Log.e(TAG, "Error creating artist: " + e.getMessage());
             throw e;
         } finally {
             db.endTransaction();
         }
-        return artistID;
+        return rowID;
     }
 
+    public static List<Artist> getArtists(SQLiteDatabase db) throws MalformedURLException {
+        Log.d(TAG, "Fetching artists");
+        List<Artist> artists = new ArrayList<>();
+        String[] columns = {"_id", "name", "sort_name", "image", "description", "link", "music_link", "interview_link", "like", "dislike"};
+        Cursor cursor = db.query(TABLE_NAME, columns, null, null, null, null, "sort_name");
+        Log.d(TAG, cursor.getCount() + " rows in DB");
+        if (cursor.getCount() > 0) {
+            try {
+                cursor.moveToFirst();
+                do {
+                    Artist artist = new Artist();
+                    artist.identifier = cursor.getLong(cursor.getColumnIndexOrThrow(columns[0]));
+                    artist.name = cursor.getString(cursor.getColumnIndexOrThrow(columns[1]));
+                    artist.sortName = cursor.getString(cursor.getColumnIndexOrThrow(columns[2]));
+                    artist.image = cursor.getString(cursor.getColumnIndexOrThrow(columns[3]));
+                    artist.description = cursor.getString(cursor.getColumnIndexOrThrow(columns[4]));
+                    String link = cursor.getString(cursor.getColumnIndexOrThrow(columns[5]));
+                    if (link != null) {
+                        artist.link = new URL(link);
+                    }
+                    String musicLink = cursor.getString(cursor.getColumnIndexOrThrow(columns[6]));
+                    if (musicLink != null) {
+                        artist.musicLink = new URL(musicLink);
+                    }
+                    String interviewLink = cursor.getString(cursor.getColumnIndexOrThrow(columns[7]));
+                    if (interviewLink != null) {
+                        artist.interviewLink = new URL(link);
+                    }
+                    artists.add(artist);
+                    cursor.moveToNext();
+                } while (!cursor.isAfterLast());
+            } finally {
+                cursor.close();
+            }
+        }
+        Log.d(TAG, "Returning " + artists.size()  +  " artists");
+        return artists;
+    }
 }
 
 class ArtistEventDAO implements BaseColumns {
@@ -276,7 +394,7 @@ class ArtistEventDAO implements BaseColumns {
 
             rowID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
             db.setTransactionSuccessful();
-            Log.d(TAG, "Inserted row " + artistID);
+            Log.d(TAG, "Inserted row " + rowID);
         } catch (Exception e) {
             Log.e(TAG, "Error creating artist-event: " + e.getMessage());
             throw e;
@@ -289,6 +407,7 @@ class ArtistEventDAO implements BaseColumns {
 
 
 class AlarmDAO implements BaseColumns {
+    public static final String TAG = "AlarmDAO";
     public final static String TABLE_NAME = "Alarms";
     public final static String CREATE_TABLE =
             "CREATE TABLE IF NOT EXISTS " + TABLE_NAME  + " ( " +
@@ -297,6 +416,26 @@ class AlarmDAO implements BaseColumns {
                     "FOREIGN KEY(event) REFERENCES events(_ID) " +
                     ");";
     public final static String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
+
+    public static long addAlarm(SQLiteDatabase db, long eventID) {
+        db.beginTransaction();
+        Log.d(TAG, "Addling alarm for event " + eventID);
+        long rowID = -1;
+        try {
+            ContentValues values = new ContentValues();
+            values.put("event", eventID);
+
+            rowID = db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+            db.setTransactionSuccessful();
+            Log.d(TAG, "Inserted row " + rowID);
+        } catch (Exception e) {
+            Log.e(TAG, "Error creating artist-event: " + e.getMessage());
+            throw e;
+        } finally {
+            db.endTransaction();
+        }
+        return rowID;
+    }
 }
 
 class IndietracksDataException extends Exception {
