@@ -1,9 +1,9 @@
 package com.roadsidepoppies.indietracks.guide2016.sql;
 
 import android.app.Activity;
-import android.app.Application;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -43,6 +43,8 @@ public class DataLoaderAsyncTask extends AsyncTask<Boolean, String, Festival> {
         IndietracksApplication application = (IndietracksApplication) activity.getApplication();
         application.setFestival(festival);
         dialog.dismiss();
+        Intent intent = new Intent("com.roadsidepoppies.indietracks.guide2016.INDIETRACKS");
+        activity.startActivity(intent);
         super.onPostExecute(festival);
 
     }

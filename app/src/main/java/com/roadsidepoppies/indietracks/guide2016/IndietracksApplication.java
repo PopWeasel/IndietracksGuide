@@ -2,6 +2,7 @@ package com.roadsidepoppies.indietracks.guide2016;
 
 import android.app.Activity;
 import android.app.Application;
+import android.util.Log;
 
 import com.roadsidepoppies.indietracks.guide2016.data.Festival;
 import com.roadsidepoppies.indietracks.guide2016.sql.DataLoaderAsyncTask;
@@ -21,6 +22,7 @@ public class IndietracksApplication extends Application {
 
     public Festival getFestival(Activity activity) {
         if (festival == null) {
+            Log.d(TAG, "Indietracks application data = null... loading from SQLite");
             new DataLoaderAsyncTask(activity).execute(false);
         }
         return festival;
@@ -29,4 +31,6 @@ public class IndietracksApplication extends Application {
     public void setFestival(Festival festival) {
         this.festival = festival;
     }
+
+
 }

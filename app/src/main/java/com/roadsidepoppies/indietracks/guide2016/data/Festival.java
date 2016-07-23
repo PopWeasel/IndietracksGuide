@@ -1,16 +1,21 @@
 package com.roadsidepoppies.indietracks.guide2016.data;
 
-import android.support.v7.util.SortedList;
-
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 import java.util.SortedMap;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * Created by maq on 12/07/2016.
  */
 public class Festival {
-    public SortedMap<String, Artist> artists;
-    public SortedMap<Date, SortedList<Event>> events;
-    public SortedList<Location> locations;
-    public SortedMap<Date, SortedMap<Location, SortedList<Event>>> schedule;
+    public List<Artist> artists = new ArrayList<>();
+    public List<Event> events = new ArrayList<>();
+    public SortedSet<Calendar> days = new TreeSet<>();
+    public List<Location> locations = new ArrayList<>();
+
+    public SortedMap<Calendar, List<Event>> eventDayMap;
+    public SortedMap<Calendar, SortedMap<Location, List<Event>>> schedule;
 }

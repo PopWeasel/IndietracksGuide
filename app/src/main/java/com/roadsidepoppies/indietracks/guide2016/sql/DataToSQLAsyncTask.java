@@ -100,8 +100,8 @@ public class DataToSQLAsyncTask extends  AsyncTask<Boolean, String, Boolean>{
             try {
                 int currentDataVersion = prefs.getInt(IndietracksApplication.DATAVERSION, 0);
                 int newDataVersion = jsonData.getInt(IndietracksApplication.DATAVERSION);
-                if(true) {
-                //if (newDataVersion > currentDataVersion) {
+                //if(true) {
+                if (newDataVersion > currentDataVersion) {
                     publishProgress("Updating data...");
                     storeNewData(jsonData, newDataVersion);
                     loaded = true;

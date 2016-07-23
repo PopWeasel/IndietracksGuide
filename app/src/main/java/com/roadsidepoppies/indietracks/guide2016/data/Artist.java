@@ -1,7 +1,5 @@
 package com.roadsidepoppies.indietracks.guide2016.data;
 
-import android.support.v7.util.SortedList;
-
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +7,8 @@ import java.util.List;
 /**
  * Created by maq on 12/07/2016.
  */
-public class Artist {
+public class Artist implements Comparable<Artist>{
+    public long identifier;
     public String name;
     public String sortName;
     public String image;
@@ -18,4 +17,14 @@ public class Artist {
     public URL musicLink;
     public URL interviewLink;
     public List<Event> events = new ArrayList<>();
+
+    @Override
+    public boolean equals(Object o) {
+        return this.sortName.equals(((Artist) o).sortName);
+    }
+
+    @Override
+    public int compareTo(Artist artist) {
+        return sortName.compareTo(artist.sortName);
+    }
 }
