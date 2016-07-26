@@ -1,5 +1,5 @@
 {
-  "DataVersion": "3",
+  "DataVersion": "4",
   "locations":[
     "Outdoor Stage",
     "Indoor Stage",
@@ -702,10 +702,14 @@
       "url": "https://www.facebook.com/SimonLoveMusic/",
       "music_url": "https://simonlove.bandcamp.com/",
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-7-simon-love-and-the-old-romantics/",
-      "start": "2016-07-29 20:00",
-      "end": "2016-07-29 20:45",
-      "day": "2016-07-29",
-      "stage": "Outdoor Stage",
+      "events": [
+        {
+          "start": "2016-07-29 20:00",
+          "end": "2016-07-29 20:45",
+          "day": "2016-07-29",
+          "stage": "Outdoor Stage"
+        }
+      ],
       "description": "Simon Love writes songs about girls, love, hate, Elton John and chopping off his penis. His LP “It Seemed Like A Good Idea At The Time” came out last year and was hailed as a breakthrough for modern living. This year he’s touring the world playing songs and getting lost in equal measure. He might/should have a new EP “Tennis Fan” out by the time he plays Indietracks."
     },
     {

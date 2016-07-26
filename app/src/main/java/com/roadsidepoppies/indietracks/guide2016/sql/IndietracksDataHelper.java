@@ -146,7 +146,7 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
 
         }
 
-
+        festival.schedule = schedule;
         return festival;
     }
 }
