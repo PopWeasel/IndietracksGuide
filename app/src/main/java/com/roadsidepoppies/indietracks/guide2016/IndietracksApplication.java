@@ -32,5 +32,7 @@ public class IndietracksApplication extends Application {
         this.festival = festival;
     }
 
-
+    public boolean isDataLoaded() {
+        return (festival != null);
+    }
 }

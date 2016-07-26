@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.roadsidepoppies.indietracks.guide2016.data.Event;
 
 public class IndietracksMainActivity extends AppCompatActivity implements OnArtistSelected {
 
@@ -26,8 +29,8 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
 
     boolean isTwoFragmentLayout = false;
     ArtistListFragment artistListFragment;
-    //ScheduleFragment scheduleFragment;
-    //TimelineFragment timeLineFragment;
+    ScheduleFragment scheduleFragment;
+    TimelineFragment timeLineFragment;
     ArtistFragment artistFragment;
     String currentFragmentTag;
     String currentArtistName;
@@ -47,7 +50,9 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(" Indietracks ");
         actionBar.setIcon(R.mipmap.ic_indietracks);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
         /*
         if (findViewById(R.id.artistContent) != null) {
             isTwoFragmentLayout = true;
@@ -57,13 +62,33 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
         if (artistListFragment == null) {
             artistListFragment = new ArtistListFragment();
         }
+        scheduleFragment = (ScheduleFragment) getSupportFragmentManager().findFragmentByTag(SCHEDULE_FRAGMENT);
+        if (scheduleFragment == null) {
+            scheduleFragment = new ScheduleFragment();
+        }
+        timeLineFragment = (TimelineFragment) getSupportFragmentManager().findFragmentByTag(TIMELINE_FRAGMENT);
+        if (timeLineFragment == null) {
+            timeLineFragment = new TimelineFragment()
+            ;
+        }
         artistFragment = (ArtistFragment) getSupportFragmentManager().findFragmentByTag(ARTIST_FRAGMENT);
 
-        if (savedInstanceState == null)  {
-            //TODO change this
-            displayArtistList();
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        Intent intent = getIntent();
+        if (intent != null && intent.getExtras() != null) {
+            Bundle extras = intent.getExtras();
+            if (extras.containsKey(EVENTKEY)) {
+                String eventKey = extras.getString(EVENTKEY);
+                Event event = ((IndietracksApplication) getApplication()).getFestival(this).eventKeyMap.get(eventKey);
+                Log.d(TAG, "Recieved intent that must have come from alarm for " + eventKey);
+                displayArtist(event.artist.sortName);
+                return;
+            }
         }
 
+        if (savedInstanceState == null)  {
+            displaySchedule();
+        }
     }
 
     @Override
@@ -73,21 +98,34 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        Log.d(TAG, "onSaveInstanceState");
+        outState.putString("WORKAROUND_FOR_BUG_19917_KEY", "WORKAROUND_FOR_BUG_19917_VALUE");
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Log.d(TAG, "onOptionsItemSelected");
         switch (item.getItemId()) {
             case R.id.action_artist:
-                break;
+                displayArtistList();
+                return true;
             case R.id.action_schedule:
-                break;
+                displaySchedule();
+                return true;
             case R.id.action_timeline:
-                break;
+                displayTimeline();
+                return true;
             case R.id.action_info:
-                break;
+                displayInfo();
+                return true;
+            case android.R.id.home:
+                onBackPressed();
         }
-        return true;
-    }
+        return super.onOptionsItemSelected(item);
 
+    }
 
     @Override
     public void onArtistSelected(String name) {
@@ -127,4 +165,29 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
         }
         transaction.commit();
     }
+
+    public void displayTimeline() {
+        currentFragmentTag = TIMELINE_FRAGMENT;
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.indietacks_content, timeLineFragment, currentFragmentTag);
+        if (getSupportFragmentManager().findFragmentById(R.id.indietacks_content) != null)
+            transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+    public void displaySchedule() {
+        currentFragmentTag = SCHEDULE_FRAGMENT;
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.indietacks_content, scheduleFragment, currentFragmentTag);
+        if (getSupportFragmentManager().findFragmentById(R.id.indietacks_content) != null)
+            transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+    public void displayInfo() {
+        intent.setAction("com.roadsidepoppies.indietracks.guide2016.INFO");
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
 }

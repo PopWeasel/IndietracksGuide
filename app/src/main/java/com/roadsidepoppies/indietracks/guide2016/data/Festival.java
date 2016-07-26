@@ -3,6 +3,7 @@ package com.roadsidepoppies.indietracks.guide2016.data;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Map;
 import java.util.SortedMap;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -16,6 +17,7 @@ public class Festival {
     public SortedSet<Calendar> days = new TreeSet<>();
     public List<Location> locations = new ArrayList<>();
 
+    public Map<String, Event> eventKeyMap;
     public SortedMap<String, Artist> artistNameMap;
     public SortedMap<Calendar, List<Event>> eventDayMap;
     public SortedMap<Calendar, SortedMap<Location, List<Event>>> schedule;

@@ -75,7 +75,10 @@ class ArtistEventDAO implements BaseColumns {
         return rowId;
     }
 
-    public static void populateArtistEvents(SQLiteDatabase db, Map<Long, Artist> artistIdMap, Map<Long, Event> eventIdMap) {
+    public static void populateArtistEvents(SQLiteDatabase db,
+                                            Map<Long, Artist> artistIdMap,
+                                            Map<Long, Event> eventIdMap,
+                                            Map<String, Event> eventKeyMap) {
         Log.d(TAG, "Fetching artist-events");
         List<Artist> artists = new ArrayList<>();
         String[] columns = {"artist", "event"};
@@ -90,6 +93,8 @@ class ArtistEventDAO implements BaseColumns {
 
                     Artist artist = artistIdMap.get(artistId);
                     Event event = eventIdMap.get(eventId);
+                    event.artist = artist;
+                    eventKeyMap.put(event.getKey(), event);
 
                     if (artist.events == null) {
                         artist.events = new ArrayList<Event>();

@@ -115,12 +115,14 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         }
 
         //add events to artists
-        ArtistEventDAO.populateArtistEvents(db, artistIdMap, eventIdMap);
+        Map<String, Event> eventKeyMap = new HashMap<>();
+        ArtistEventDAO.populateArtistEvents(db, artistIdMap, eventIdMap, eventKeyMap);
 
         festival.locations = locations;
         festival.events = events;
         festival.artists = artists;
         festival.days = days;
+        festival.eventKeyMap = eventKeyMap;
         festival.eventDayMap = eventDayMap;
         festival.artistNameMap = artistNameMap;
 

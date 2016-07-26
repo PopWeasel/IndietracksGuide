@@ -44,7 +44,9 @@ public class DataLoaderAsyncTask extends AsyncTask<Boolean, String, Festival> {
         application.setFestival(festival);
         dialog.dismiss();
         Intent intent = new Intent("com.roadsidepoppies.indietracks.guide2016.INDIETRACKS");
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
+        activity.finish();
         super.onPostExecute(festival);
 
     }

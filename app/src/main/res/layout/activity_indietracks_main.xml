@@ -13,9 +13,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
         android:elevation="4dp"
-        android:navigationIcon="@mipmap/ic_indietracks"
-
-
         app:popupTheme="@style/ThemeOverlay.AppCompat" />
 
     <FrameLayout
