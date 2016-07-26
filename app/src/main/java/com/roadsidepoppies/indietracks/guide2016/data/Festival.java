@@ -16,6 +16,7 @@ public class Festival {
     public SortedSet<Calendar> days = new TreeSet<>();
     public List<Location> locations = new ArrayList<>();
 
+    public SortedMap<String, Artist> artistNameMap;
     public SortedMap<Calendar, List<Event>> eventDayMap;
     public SortedMap<Calendar, SortedMap<Location, List<Event>>> schedule;
 }

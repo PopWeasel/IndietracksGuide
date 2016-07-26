@@ -113,7 +113,7 @@ class ArtistDAO implements BaseColumns {
                     }
                     String interviewLink = cursor.getString(cursor.getColumnIndexOrThrow(columns[7]));
                     if (interviewLink != null) {
-                        artist.interviewLink = new URL(link);
+                        artist.interviewLink = new URL(interviewLink);
                     }
                     artists.add(artist);
                     cursor.moveToNext();

@@ -1,5 +1,5 @@
 {
-  "DataVersion": "1",
+  "DataVersion": "3",
   "locations":[
     "Outdoor Stage",
     "Indoor Stage",
@@ -11,7 +11,7 @@
     {
       "name": "Saint Etienne",
       "sortName": "saint etienne",
-      "image": "saintetienne.jpg",
+      "image": "saintetienne",
       "events": [
         {
           "start": "2016-07-30 21:00",
@@ -26,7 +26,7 @@
     {
       "name": "The Aislers Set",
       "sortName": "aislers set",
-      "image": "aislerset.jpg",
+      "image": "aislerset",
       "events": [
         {
           "start": "2016-07-31 21:00",
@@ -42,7 +42,7 @@
     {
       "name": "The Spook School",
       "sortName": "spook school",
-      "image": "spookschool.jpg",
+      "image": "spookschool",
       "url": "https://thespookschool.com/",
       "music_url": "https://thespookschool.bandcamp.com/",
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-8-the-spook-school/",
@@ -59,7 +59,7 @@
     {
       "name": "Emma Pollock",
       "sortName": "emma pollock",
-      "image": "emmapollock.jpg",
+      "image": "emmapollock",
       "events": [
         {
           "start": "2016-07-30 18:50",
@@ -75,7 +75,7 @@
     {
       "name": "Darren Hayman and the Secondary Modern",
       "sortName": "darren hayman and the secondary modern",
-      "image": "darrenhayman.jpg",
+      "image": "darrenhayman",
       "events": [
         {
           "start": "2016-07-31 18:50",
@@ -86,12 +86,13 @@
       ],
       "url": "http://hefnet.com/",
       "music_url": "https://darrenhayman.bandcamp.com/album/darren-hayman-and-the-secondary-modern",
+      "interview_url": "http://www.indietracks.co.uk/exclusive-darren-hayman-video/",
       "description": "Darren Hayman is the former singer-songwriter of the phenomenally successful and much-loved Hefner. A hugely prolific artist, he has released 14 solo albums since 2006 and will be performing at Indietracks with his band The Secondary Modern. His solo records have covered a variety of topics, ranging from Essex life laments for lost lidos, to re-imagined 19th century political chants and, most recently, thankful villages – villages in England and Wales where every solider returned from World War One. The Guardian have described Hayman’s profoundly English songwriting as “the match of Ray Davies”, whilst Drowned in Sound consider him a “nationalised treasure.”"
     },
     {
       "name": "Comet Gain",
       "sortName": "comet gain",
-      "image": "cometgain.jpg",
+      "image": "cometgain",
       "events": [
         {
           "start": "2016-07-31 19:50",
@@ -108,7 +109,7 @@
     {
       "name": "The Lovely Eggs",
       "sortName": "the lovely eggs",
-      "image": "loveleggs.jpg",
+      "image": "loveleggs",
       "events":[
         {
           "start": "2016-07-30 19:50",
@@ -124,7 +125,7 @@
     {
       "name": "Alimony Hustle",
       "sortName": "alimony hustle",
-      "image": "alimonyhustle.jpg",
+      "image": "alimonyhustle",
       "events":[
         {
           "start": "2016-07-31 15:20",
@@ -147,14 +148,14 @@
           "stage": "Indoor Stage"
         }
       ],
-      "image": "aycarmela.jpg",
+      "image": "aycarmela",
       "url": "https://aycarmela.bandcamp.com/",
       "description": "¡Ay Carmela! is a three piece DIY indie / punk band based in Uxbridge, west London. Inspired by 90s indie rock and punk, they sing about jobs, relationships, and social frustrations. Their single ‘Dog Tired’ was released in December 2014, and they have since toured the UK three times. Their first full length album will be released in spring 2016."
     },
     {
       "name": "Bearsuit",
       "sortName": "bearsuit",
-      "image": "bearsuit.jpg",
+      "image": "bearsuit",
       "events":[
         {
           "start": "2016-07-30 17:45",
@@ -170,7 +171,7 @@
     {
       "name": "Boys Forever",
       "sortName": "boys forever",
-      "image": "boysforever.jpg",
+      "image": "boysforever",
       "events":[
         {
           "start": "2016-07-30 15:40",
@@ -186,7 +187,7 @@
     {
       "name": "Charla Fantasma",
       "sortName": "charla fantasma",
-      "image": "charlafantasma.jpg",
+      "image": "charlafantasma",
       "events":[
         {
           "start": "2016-07-31 15:00",
@@ -202,7 +203,7 @@
     {
       "name": "Chrissy Barnacle",
       "sortName": "chrissy barnacle",
-      "image": "chrissy.jpg",
+      "image": "chrissy",
       "events":[
         {
           "start": "2016-07-30 14:20",
@@ -218,7 +219,7 @@
     {
       "name": "City Yelps",
       "sortName": "city yelps",
-      "image": "cityyelps.jpg",
+      "image": "cityyelps",
       "events":[
         {
           "start": "2016-07-31 13:00",
@@ -235,7 +236,7 @@
     {
       "name": "Deerful",
       "sortName": "deerful",
-      "image": "deerful.jpg",
+      "image": "deerful",
       "events":[
         {
           "start": "2016-07-31 16:20",
@@ -251,7 +252,7 @@
     {
       "name": "DIRTYGIRL",
       "sortName": "dirtygirl",
-      "image": "dirtygirl.jpg",
+      "image": "dirtygirl",
       "events":[
         {
           "start": "2016-07-30 13:40",
@@ -266,7 +267,7 @@
     {
       "name": "Don't Falter DJs",
       "sortName": "don't falter djs",
-      "image": "dontfalter.png",
+      "image": "dontfalter",
       "events":[
         {
           "start": "2016-07-29 22:00",
@@ -281,7 +282,7 @@
     {
       "name": "Expert Alterations",
       "sortName": "expert alterations",
-      "image": "expertalterations.jpg",
+      "image": "expertalterations",
       "events":[
         {
           "start": "2016-07-30 18:00",
@@ -306,14 +307,14 @@
           "stage": "Church Stage"
         }
       ],
-      "image": "fallingandlaughing.jpg",
+      "image": "fallingandlaughing",
       "url": "https://fallingandlaughing.bandcamp.com/",
       "description": "Falling and Laughing are a Birmingham-ish two-piece who must be at least 10 years old by now. Along the way they’ve played popshows, toured, and released songs – including a semi-recent series of four track EPs that started with a release on Odd Box Records. Their occasional jangles invite more frequent comparisons with bands like The Wedding Present, but alongside a love of melody they introduce busy drumming, alternative guitar tunings, and have fun playing with the dynamics of a two-piece to create a mix of indie-pop and something-elses. "
     },
     {
       "name": "Flowers",
       "sortName": "flowers",
-      "image": "flowers.jpg",
+      "image": "flowers",
       "events":[
         {
           "start": "2016-07-30 16:40",
@@ -329,7 +330,7 @@
     {
       "name": "Frankie Machine",
       "sortName": "frankie machine",
-      "image": "frankie.jpg",
+      "image": "frankie",
       "events":[
         {
           "start": "2016-07-30 15:15",
@@ -344,7 +345,7 @@
     {
       "name": "Gavin Osborn",
       "sortName": "gavin osborn",
-      "image": "gavin.jpg",
+      "image": "gavin",
       "events":[
         {
           "start": "2016-07-31 14:00",
@@ -360,7 +361,7 @@
     {
       "name": "Girl Ray",
       "sortName": "girl ray",
-      "image": "girlray.jpg",
+      "image": "girlray",
       "events":[
         {
           "start": "2016-07-31 17:00",
@@ -376,7 +377,7 @@
     {
       "name": "GRLTLK DJs",
       "sortName": "grltlk djs",
-      "image": "grltlk.jpg",
+      "image": "grltlk",
       "url": "https://grltlkdjs.com/",
       "events":[
         {
@@ -391,7 +392,7 @@
     {
       "name": "Haiku Salut",
       "sortName": "haiku salut",
-      "image": "haikusalut.jpg",
+      "image": "haikusalut",
       "events": [
         {
           "start": "2016-07-31 17:45",
@@ -407,7 +408,7 @@
     {
       "name": "Helen McCookerybook",
       "sortName": "helen mccookerybook",
-      "image": "helenmccookerybook.jpg",
+      "image": "helenmccookerybook",
       "events":[
         {
           "start": "2016-07-31 15:15",
@@ -423,7 +424,7 @@
     {
       "name": "Honey Joy",
       "sortName": "honey joy",
-      "image": "honeyjoy.jpg",
+      "image": "honeyjoy",
       "events":[
         {
           "start": "2016-07-30 13:00",
@@ -440,7 +441,7 @@
     {
       "name": "Humousexual",
       "sortName": "humousexual",
-      "image": "humousexual.jpg",
+      "image": "humousexual",
       "events":[
         {
           "start": "2016-07-31 19:20",
@@ -456,7 +457,7 @@
     {
       "name": "Iko Cherie",
       "sortName": "iko cherie",
-      "image": "ikocherie.jpg",
+      "image": "ikocherie",
       "events":[
         {
           "start": "2016-07-30 19:20",
@@ -472,7 +473,7 @@
     {
       "name": "Jessica and the Fletchers",
       "sortName": "jessica and the fletchers",
-      "image": "jessica.jpg",
+      "image": "jessica",
       "events":[
         {
           "start": "2016-07-30 16:00",
@@ -488,7 +489,7 @@
     {
       "name": "Just Like Honey DJs",
       "sortName": "just like honey djs",
-      "image": "justlikehoney.jpg",
+      "image": "justlikehoney",
       "events":[
         {
           "start": "2016-07-30 22:15",
@@ -503,7 +504,7 @@
     {
       "name": "Lorna",
       "sortName": "lorna",
-      "image": "lorna.png",
+      "image": "lorna",
       "events":[
         {
           "start": "2016-07-31 14:00",
@@ -519,7 +520,7 @@
     {
       "name": "Maggie8",
       "sortName": "maggie8",
-      "image": "maggie8.jpg",
+      "image": "maggie8",
       "events":[
         {
           "start": "2016-07-30 14:00",
@@ -536,7 +537,7 @@
     {
       "name": "Nervous Twitch",
       "sortName": "nervous twitch",
-      "image": "nervoustwitch.png",
+      "image": "nervoustwitch",
       "url": "https://www.facebook.com/nervoustwitchband",
       "music_url": "https://nervoustwitch.bandcamp.com/",
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-5-nervous-twitch/",
@@ -553,7 +554,7 @@
     {
       "name": "Pete Green",
       "sortName": "pete green",
-      "image": "petegreen.jpg",
+      "image": "petegreen",
       "events":[
         {
           "start": "2016-07-31 18:20",
@@ -564,12 +565,13 @@
       ],
       "url": "https://petegreensolo.com/",
       "music_url": "https://petegreen.bandcamp.com/",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-13-pete-green/",
       "description": "Pete Green is a Sheffield-based singer/songwriter, poet, ineffectual layabout and king of the impossible. His career highlights include a minor internet hit in Germany with a song about MySpace (ask your parents), and making the sound go funny when his debut solo single ‘Everything I Do is Gonna Be Sparkly’ received airplay on BBC Radio 1. Pete also fronts indiepop underachievers The Sweet Nothings and wishes he was Scottish. He writes about coasts and islands, walking, getting lost, underachievement, love, railways, whisky, and rubbish football. His new solo album, a follow-up to 2013′s The Glass Delusion, is out this summer."
     },
     {
       "name": "Po!",
       "sortName": "po!",
-      "image": "po.jpg",
+      "image": "po",
       "events":[
         {
           "start": "2016-07-30 17:00",
@@ -579,12 +581,13 @@
         }
       ],
       "url": "https://en.wikipedia.org/wiki/Po!",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-12-po/",
       "description": "This classic indie-pop band played a big part in the world of fanzines, DIY record pressing and worldwide mail order before the Internet was a thing. Ruth PO! started the band as well as being the founder of indie record label Rutland Records. Ruth PO!’s songs are great pop tunes  but often there’s a barbed edge in the lyrics. Songs such as ‘Sunday Never Comes Around’ and ‘Appleseed Alley’ are indie-pop gold, and the band will be playing some of the music that gained them a John Peel Session in 1994 and NME single of the week in 1997."
     },
     {
       "name": "Ruth Po!",
       "sortName": "ruth po!",
-      "image": "po.jpg",
+      "image": "po",
       "events":[
         {
           "start": "2016-07-31 20:20",
@@ -594,12 +597,13 @@
         }
       ],
       "url": "https://en.wikipedia.org/wiki/Po!",
+      "interview_url": "http://www.indietracks.co.uk/indietracks-interview-12-po/",
       "description": "This classic indie-pop band played a big part in the world of fanzines, DIY record pressing and worldwide mail order before the Internet was a thing. Ruth PO! started the band as well as being the founder of indie record label Rutland Records. Ruth PO!’s songs are great pop tunes  but often there’s a barbed edge in the lyrics. Songs such as ‘Sunday Never Comes Around’ and ‘Appleseed Alley’ are indie-pop gold, and the band will be playing some of the music that gained them a John Peel Session in 1994 and NME single of the week in 1997."
     },
     {
       "name": "Prizefighter",
       "sortName": "prizefighter",
-      "image": "prizefighter.jpg",
+      "image": "prizefighter",
       "events":[
         {
           "start": "2016-07-31 14:20",
@@ -615,7 +619,7 @@
     {
       "name": "Red Sleeping Beauty",
       "sortName": "red sleeping beauty",
-      "image": "redsleepingbeauty.jpg",
+      "image": "redsleepingbeauty",
       "events":[
         {
           "start": "2016-07-31 16:40",
@@ -631,7 +635,7 @@
     {
       "name": "Robberie",
       "sortName": "robberie",
-      "image": "robberie.jpg",
+      "image": "robberie",
       "events":[
         {
           "start": "2016-07-30 16:15",
@@ -647,7 +651,7 @@
     {
       "name": "Kriss Foster",
       "sortName": "kriss foster",
-      "image": "krissfoster.jpg",
+      "image": "krissfoster",
       "events":[
         {
           "start": "2016-07-30 14:00",
@@ -663,7 +667,7 @@
     {
       "name": "Seazoo",
       "sortName": "seazoo",
-      "image": "seazoo.jpg",
+      "image": "seazoo",
       "events":[
         {
           "start": "2016-07-31 15:40",
@@ -679,7 +683,7 @@
     {
       "name": "Scared To Dance DJs",
       "sortName": "scared to dance djs",
-      "image": "scaredtodance.jpg",
+      "image": "scaredtodance",
       "events":[
         {
           "start": "2016-07-30 22:15",
@@ -694,7 +698,7 @@
     {
       "name": "Simon Love and the Old Romantics",
       "sortName": "simon love and the old romantics",
-      "image": "simonlove.jpg",
+      "image": "simonlove",
       "url": "https://www.facebook.com/SimonLoveMusic/",
       "music_url": "https://simonlove.bandcamp.com/",
       "interview_url": "http://www.indietracks.co.uk/indietracks-interview-7-simon-love-and-the-old-romantics/",
@@ -707,7 +711,7 @@
     {
       "name": "Soda Fountain Rag",
       "sortName": "soda fountain rag",
-      "image": "sodafountainrag.jpg",
+      "image": "sodafountainrag",
       "events":[
         {
           "start": "2016-07-30 15:00",
@@ -723,7 +727,7 @@
     {
       "name": "Songs for Walter",
       "sortName": "songs for walter",
-      "image": "songsforwalter.jpg",
+      "image": "songsforwalter",
       "events":[
         {
           "start": "2016-07-30 16:20",
@@ -739,7 +743,7 @@
     {
       "name": "Sonic The Comic",
       "sortName": "sonic the comic",
-      "image": "sonicthecomic.png",
+      "image": "sonicthecomic",
       "events":[
         {
           "start": "2016-07-31 13:20",
@@ -756,7 +760,7 @@
     {
       "name": "Team Indietracks 10th Birthday Party DJs",
       "sortName": "team indietracks 10th birthday party djs",
-      "image": "teamindietracks.jpg",
+      "image": "teamindietracks",
       "events":[
         {
           "start": "2016-07-31 22:15",
@@ -770,7 +774,7 @@
     {
       "name": "The Charlie Tipper Conspiracy",
       "sortName": "charlie tipper conspiracy",
-      "image": "charlietipper.jpg",
+      "image": "charlietipper",
       "events":[
         {
           "start": "2016-07-31 14:40",
@@ -786,7 +790,7 @@
     {
       "name": "Trust Fund",
       "sortName": "trust fund",
-      "image": "trustfund.jpg",
+      "image": "trustfund",
       "events":[
         {
           "start": "2016-07-31 18:00",
@@ -802,7 +806,7 @@
     {
       "name": "Two White Cranes",
       "sortName": "two white cranes",
-      "image": "twowhitecranes.jpg",
+      "image": "twowhitecranes",
       "events":[
         {
           "start": "2016-07-30 18:20",
@@ -818,7 +822,7 @@
     {
       "name": "Vacacione",
       "sortName": "vacacione",
-      "image": "vacaciones.png",
+      "image": "vacaciones",
       "events":[
         {
           "start": "2016-07-30 14:40",
@@ -834,7 +838,7 @@
     {
       "name": "White Town",
       "sortName": "white town",
-      "image": "whitetown.jpg",
+      "image": "whitetown",
       "events":[
         {
           "start": "2016-07-31 16:15",
@@ -850,7 +854,7 @@
     {
       "name": "Wintergreen",
       "sortName": "wintergreen",
-      "image": "wintergreen.jpg",
+      "image": "wintergreen",
       "events":[
         {
           "start": "2016-07-30 15:20",
@@ -866,7 +870,7 @@
     {
       "name": "Witching Waves",
       "sortName": "witching waves",
-      "image": "witching.png",
+      "image": "witching",
       "events":[
         {
           "start": "2016-07-31 13:40",
@@ -882,7 +886,7 @@
     {
       "name": "Secret Shine",
       "sortName": "secret shine",
-      "image": "secretshine.jpg",
+      "image": "secretshine",
       "events":[
         {
           "start": "2016-07-30 20:20",
@@ -898,7 +902,7 @@
     {
       "name": "Indietracks: The Film (Jeanie Finlay Documentary)",
       "sortName": "indietracks the film",
-      "image": "jeanie.jpg",
+      "image": "jeanie",
       "events":[
         {
           "start": "2016-07-30 17:20",
@@ -920,7 +924,7 @@
     {
       "name": "Boxing Clever",
       "sortName": "boxing clever",
-      "image": "workshop.jpg",
+      "image": "workshop",
       "events":[
         {
           "start": "2016-07-30 14:00",
@@ -934,7 +938,7 @@
     {
       "name": "Family Dance Party at Indietracks ",
       "sortName": "family dance party at indietracks ",
-      "image": "workshop.jpg",
+      "image": "workshop",
       "events":[
         {
           "start": "2016-07-30 15:00",
@@ -948,7 +952,7 @@
     {
       "name": "The Bumper Fun Book of Indietracks! ",
       "sortName": "bumper fun book of indietracks",
-      "image": "workshop.jpg",
+      "image": "workshop",
       "events":[
         {
           "start": "2016-07-30 16:00",
@@ -962,7 +966,7 @@
     {
       "name": "Niall is your life coach 2.0!!!",
       "sortName": "niall is your life coach 2.0!!!",
-      "image": "nial.jpg",
+      "image": "nial",
       "events":[
         {
           "start": "2016-07-30 17:00",
@@ -976,7 +980,7 @@
     {
       "name": "All Aboard Children’s Poetry Walk and Workshop",
       "sortName": "all aboard children’s poetry walk and workshop",
-      "image": "workshop.jpg",
+      "image": "workshop",
       "events":[
         {
           "start": "2016-07-31 12:00",
@@ -990,7 +994,7 @@
     {
       "name": "Give Them A Great Big Quiz",
       "sortName": "give them a great big quiz",
-      "image": "workshop.jpg",
+      "image": "workshop",
       "events":[
         {
           "start": "2016-07-31 13:00",
@@ -1006,7 +1010,7 @@
       "sortName": "printmaking workshop tote bags",
       "events":[
         {
-          "image": "totes.jpg",
+          "image": "totes",
           "start": "2016-07-31 14:00",
           "end": "2016-07-31 14:45",
           "day": "2016-07-31",
@@ -1018,7 +1022,7 @@
     {
       "name": "Portraits by Salle Pierre Lamy",
       "sortName": "portraits by salle pierre lamy",
-      "image": "sallepierre.jpg",
+      "image": "sallepierre",
       "events":[
         {
           "start": "2016-07-31 15:00",
@@ -1032,7 +1036,7 @@
     {
       "name": "Tea and Tasseomancy",
       "sortName": "tea and tasseomancy",
-      "image": "workshop.jpg",
+      "image": "workshop",
       "events":[
         {
           "start": "2016-07-31 16:00",

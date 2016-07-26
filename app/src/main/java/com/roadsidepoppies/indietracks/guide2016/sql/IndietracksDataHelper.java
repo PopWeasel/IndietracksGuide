@@ -78,7 +78,7 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         }
     }
 
-    public Festival getFestivalData() throws MalformedURLException {
+    public Festival getFestivalData() throws MalformedURLException, IndietracksDataException {
         Log.d(TAG, "getFestivalData");
         SQLiteDatabase db = getReadableDatabase();
         Festival festival = new Festival();
@@ -106,8 +106,12 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         List<Artist> artists = ArtistDAO.getArtists(db);
         Log.d(TAG, "Artists = " + artists.size());
         Map<Long, Artist> artistIdMap = new HashMap<>();
+        SortedMap<String, Artist> artistNameMap = new TreeMap<>();
         for(Artist artist : artists) {
             artistIdMap.put(artist.identifier, artist);
+            if (artistNameMap.containsKey(artist.sortName))
+                throw new IndietracksDataException("Expect artist names to be unique: " + artist.sortName + " found more than once");
+            artistNameMap.put(artist.sortName, artist);
         }
 
         //add events to artists
@@ -118,6 +122,7 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         festival.artists = artists;
         festival.days = days;
         festival.eventDayMap = eventDayMap;
+        festival.artistNameMap = artistNameMap;
 
         SortedMap<Calendar, SortedMap<Location, List<Event>>> schedule = new TreeMap<>();
 
