@@ -18,7 +18,7 @@ public class IndietracksApplication extends Application {
     public static final String TIMEZONE = "Europe/London";
     public static final String DATAVERSION = "DataVersion";
 
-    Festival festival;
+    private Festival festival;
 
     public Festival getFestival(Activity activity) {
         if (festival == null) {

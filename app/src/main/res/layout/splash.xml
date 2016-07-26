@@ -11,6 +11,7 @@
         android:clickable="false"
         android:src="@drawable/teamindietracks"
         android:layout_weight="0.4"
+        android:background="@color/white"
         android:contentDescription="Indietracks 2016 Logo"
         />
 </LinearLayout>

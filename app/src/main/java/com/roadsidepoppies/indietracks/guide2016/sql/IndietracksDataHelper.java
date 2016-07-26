@@ -83,11 +83,13 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getReadableDatabase();
         Festival festival = new Festival();
         List<Location> locations = getLocations();
+        Log.d(TAG, "Locations = " + locations.size());
         Map<Long, Location> locationIdMap = new HashMap<>();
         for (Location location : locations) {
             locationIdMap.put(location.identifier, location);
         }
         List<Event> events = EventDAO.getEvents(db, locationIdMap);
+        Log.d(TAG, "Events = " + events.size());
         Map<Long, Event> eventIdMap = new HashMap<>();
         SortedSet<Calendar> days = new TreeSet<>();
         SortedMap<Calendar, List<Event>> eventDayMap= new TreeMap<>();
@@ -102,6 +104,7 @@ public class IndietracksDataHelper extends SQLiteOpenHelper {
             eventDayMap.get(event.day).add(event);
         }
         List<Artist> artists = ArtistDAO.getArtists(db);
+        Log.d(TAG, "Artists = " + artists.size());
         Map<Long, Artist> artistIdMap = new HashMap<>();
         for(Artist artist : artists) {
             artistIdMap.put(artist.identifier, artist);
