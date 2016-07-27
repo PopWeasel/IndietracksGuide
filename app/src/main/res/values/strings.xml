@@ -17,4 +17,5 @@
 
     <string name="app_title">Indietracks</string>
     <string name="band_image">Image of performer, DJ or Workshop</string>
+    <string name="settings_home">Back to guide</string>
 </resources>

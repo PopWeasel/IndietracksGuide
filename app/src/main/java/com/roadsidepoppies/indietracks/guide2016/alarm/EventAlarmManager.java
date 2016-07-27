@@ -67,7 +67,7 @@ public class EventAlarmManager {
             AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
             alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pending);
             // MAQ - debugging alarm
-            alarmManager.set(AlarmManager.RTC_WAKEUP, (System.currentTimeMillis() - 10000L), pending);
+            //alarmManager.set(AlarmManager.RTC_WAKEUP, (System.currentTimeMillis() - 10000L), pending);
             Log.d(TAG, "The time now is " + System.currentTimeMillis() + " the alarm is set for " + (System.currentTimeMillis() - 10000L));
 
         }

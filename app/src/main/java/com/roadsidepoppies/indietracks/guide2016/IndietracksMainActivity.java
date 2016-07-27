@@ -42,7 +42,7 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
         super.onCreate(savedInstanceState);
 
         //MAQ - debugging only
-        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
+        //StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
 
         setContentView(R.layout.activity_indietracks_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.indietracks_toolbar);
@@ -53,11 +53,11 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setHomeButtonEnabled(true);
         //actionBar.setDisplayHomeAsUpEnabled(true);
-        /*
-        if (findViewById(R.id.artistContent) != null) {
+
+        if (findViewById(R.id.artist_content) != null) {
             isTwoFragmentLayout = true;
         }
-        */
+
         artistListFragment = (ArtistListFragment) getSupportFragmentManager().findFragmentByTag(ARTISTLIST_FRAGMENT);
         if (artistListFragment == null) {
             artistListFragment = new ArtistListFragment();
@@ -150,12 +150,9 @@ public class IndietracksMainActivity extends AppCompatActivity implements OnArti
         artistFragment.setArguments(message);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         if (isTwoFragmentLayout) {
-            //TODO replace this once two-fragment view defined
-            /*
-            transaction.replace(R.id.artistContent, artistFragment, ARTIST_FRAGMENT);
-            if (getSupportFragmentManager().findFragmentById(R.id.artistContent) != null)
+            transaction.replace(R.id.artist_content, artistFragment, ARTIST_FRAGMENT);
+            if (getSupportFragmentManager().findFragmentById(R.id.artist_content) != null)
                 transaction.addToBackStack(null);
-            */
         } else {
             currentFragmentTag = ARTIST_FRAGMENT;
             transaction.replace(R.id.indietacks_content, artistFragment, ARTIST_FRAGMENT);

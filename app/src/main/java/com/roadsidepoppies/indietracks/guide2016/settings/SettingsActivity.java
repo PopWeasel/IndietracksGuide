@@ -6,8 +6,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
 import com.roadsidepoppies.indietracks.guide2016.R;
@@ -33,7 +36,7 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                intent.setAction("com.roadsidepoppies.indietracks.guide2016.INDIETRACKS");
+                intent.setAction("uk.co.matloob.indietracks2014.INDIETRACKS");
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
         }

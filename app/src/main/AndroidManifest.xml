@@ -35,7 +35,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity">
+        <activity android:name=".settings.SettingsActivity">
             <intent-filter>
                 <action android:name="com.roadsidepoppies.indietracks.guide2016.SETTINGS" />
 

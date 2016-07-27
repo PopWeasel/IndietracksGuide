@@ -31,8 +31,4 @@ public class IndietracksApplication extends Application {
     public void setFestival(Festival festival) {
         this.festival = festival;
     }
-
-    public boolean isDataLoaded() {
-        return (festival != null);
-    }
 }
