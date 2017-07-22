@@ -3,6 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/timeline_content"
-    tools:context="com.roadsidepoppies.indietracks.guide2016.TimelineFragment">
+    tools:context="com.roadsidepoppies.indietracks.guide2017.TimelineFragment">
 
 </FrameLayout>
