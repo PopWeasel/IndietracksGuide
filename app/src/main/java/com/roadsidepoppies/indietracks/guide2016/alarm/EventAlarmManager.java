@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016.alarm;
+package com.roadsidepoppies.indietracks.guide2017.alarm;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -9,12 +9,12 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.util.Log;
 
-import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
-import com.roadsidepoppies.indietracks.guide2016.R;
-import com.roadsidepoppies.indietracks.guide2016.data.Festival;
-import com.roadsidepoppies.indietracks.guide2016.settings.SettingsActivity;
-import com.roadsidepoppies.indietracks.guide2016.data.Event;
-import com.roadsidepoppies.indietracks.guide2016.sql.IndietracksDataHelper;
+import com.roadsidepoppies.indietracks.guide2017.IndietracksApplication;
+import com.roadsidepoppies.indietracks.guide2017.R;
+import com.roadsidepoppies.indietracks.guide2017.data.Festival;
+import com.roadsidepoppies.indietracks.guide2017.settings.SettingsActivity;
+import com.roadsidepoppies.indietracks.guide2017.data.Event;
+import com.roadsidepoppies.indietracks.guide2017.sql.IndietracksDataHelper;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

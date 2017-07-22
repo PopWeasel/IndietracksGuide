@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016.sql;
+package com.roadsidepoppies.indietracks.guide2017.sql;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -8,10 +8,10 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.view.Gravity;
 
-import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
-import com.roadsidepoppies.indietracks.guide2016.data.Artist;
-import com.roadsidepoppies.indietracks.guide2016.data.Event;
-import com.roadsidepoppies.indietracks.guide2016.data.Location;
+import com.roadsidepoppies.indietracks.guide2017.IndietracksApplication;
+import com.roadsidepoppies.indietracks.guide2017.data.Artist;
+import com.roadsidepoppies.indietracks.guide2017.data.Event;
+import com.roadsidepoppies.indietracks.guide2017.data.Location;
 
 import org.json.JSONArray;
 import org.json.JSONException;

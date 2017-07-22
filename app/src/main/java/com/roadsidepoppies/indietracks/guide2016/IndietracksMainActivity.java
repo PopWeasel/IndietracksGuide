@@ -1,9 +1,7 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
@@ -13,7 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.roadsidepoppies.indietracks.guide2016.data.Event;
+import com.roadsidepoppies.indietracks.guide2017.data.Event;
 
 public class IndietracksMainActivity extends AppCompatActivity implements OnArtistSelected {
 

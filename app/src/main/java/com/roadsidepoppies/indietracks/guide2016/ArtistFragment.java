@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 
 import android.app.Activity;
@@ -7,34 +7,28 @@ import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.LayoutInflaterCompat;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.roadsidepoppies.indietracks.guide2016.alarm.EventAlarmManager;
-import com.roadsidepoppies.indietracks.guide2016.data.Artist;
-import com.roadsidepoppies.indietracks.guide2016.data.Event;
-import com.roadsidepoppies.indietracks.guide2016.data.Festival;
-import com.roadsidepoppies.indietracks.guide2016.settings.SettingsActivity;
-
-import org.w3c.dom.Text;
+import com.roadsidepoppies.indietracks.guide2017.alarm.EventAlarmManager;
+import com.roadsidepoppies.indietracks.guide2017.data.Artist;
+import com.roadsidepoppies.indietracks.guide2017.data.Event;
+import com.roadsidepoppies.indietracks.guide2017.data.Festival;
+import com.roadsidepoppies.indietracks.guide2017.settings.SettingsActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
-import java.util.zip.Inflater;
 
 /**
  * A simple {@link Fragment} subclass.

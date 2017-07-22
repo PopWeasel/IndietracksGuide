@@ -1,6 +1,6 @@
-package com.roadsidepoppies.indietracks.guide2016.data;
+package com.roadsidepoppies.indietracks.guide2017.data;
 
-import com.roadsidepoppies.indietracks.guide2016.alarm.EventAlarmManager;
+import com.roadsidepoppies.indietracks.guide2017.alarm.EventAlarmManager;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

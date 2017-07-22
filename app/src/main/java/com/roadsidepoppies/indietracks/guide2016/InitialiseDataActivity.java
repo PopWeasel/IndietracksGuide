@@ -1,10 +1,10 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.roadsidepoppies.indietracks.guide2016.sql.DataToSQLAsyncTask;
+import com.roadsidepoppies.indietracks.guide2017.sql.DataToSQLAsyncTask;
 
 /**
  * Created by maq on 12/07/2016.

@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016.sql;
+package com.roadsidepoppies.indietracks.guide2017.sql;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import com.roadsidepoppies.indietracks.guide2016.data.Location;
+import com.roadsidepoppies.indietracks.guide2017.data.Location;
 
 import java.util.ArrayList;
 

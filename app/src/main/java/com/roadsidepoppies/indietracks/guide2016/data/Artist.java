@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016.data;
+package com.roadsidepoppies.indietracks.guide2017.data;
 
 import java.net.URL;
 import java.util.ArrayList;

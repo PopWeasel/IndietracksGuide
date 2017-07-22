@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 
 import android.app.Activity;
@@ -15,10 +15,9 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TabHost;
 
-import com.roadsidepoppies.indietracks.guide2016.R;
-import com.roadsidepoppies.indietracks.guide2016.data.Event;
-import com.roadsidepoppies.indietracks.guide2016.data.Festival;
-import com.roadsidepoppies.indietracks.guide2016.data.Location;
+import com.roadsidepoppies.indietracks.guide2017.data.Event;
+import com.roadsidepoppies.indietracks.guide2017.data.Festival;
+import com.roadsidepoppies.indietracks.guide2017.data.Location;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

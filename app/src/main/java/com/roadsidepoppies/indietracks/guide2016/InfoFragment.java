@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 
 import android.os.Bundle;
@@ -12,8 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.roadsidepoppies.indietracks.guide2016.R;
 
 import java.util.HashMap;
 import java.util.Map;

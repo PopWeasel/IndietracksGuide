@@ -1,11 +1,11 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 import android.app.Activity;
 import android.app.Application;
 import android.util.Log;
 
-import com.roadsidepoppies.indietracks.guide2016.data.Festival;
-import com.roadsidepoppies.indietracks.guide2016.sql.DataLoaderAsyncTask;
+import com.roadsidepoppies.indietracks.guide2017.data.Festival;
+import com.roadsidepoppies.indietracks.guide2017.sql.DataLoaderAsyncTask;
 
 /**
  * Created by maq on 12/07/2016.

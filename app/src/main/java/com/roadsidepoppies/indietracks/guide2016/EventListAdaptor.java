@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.roadsidepoppies.indietracks.guide2016.alarm.EventAlarmManager;
-import com.roadsidepoppies.indietracks.guide2016.data.Event;
-import com.roadsidepoppies.indietracks.guide2016.settings.SettingsActivity;
+import com.roadsidepoppies.indietracks.guide2017.alarm.EventAlarmManager;
+import com.roadsidepoppies.indietracks.guide2017.data.Event;
+import com.roadsidepoppies.indietracks.guide2017.settings.SettingsActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

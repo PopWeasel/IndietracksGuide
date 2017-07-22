@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016.settings;
+package com.roadsidepoppies.indietracks.guide2017.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,15 +6,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
 
-import com.roadsidepoppies.indietracks.guide2016.IndietracksApplication;
-import com.roadsidepoppies.indietracks.guide2016.R;
-import com.roadsidepoppies.indietracks.guide2016.alarm.EventAlarmManager;
+import com.roadsidepoppies.indietracks.guide2017.IndietracksApplication;
+import com.roadsidepoppies.indietracks.guide2017.R;
+import com.roadsidepoppies.indietracks.guide2017.alarm.EventAlarmManager;
 
 /**
  * Created by maq on 26/07/2016.
