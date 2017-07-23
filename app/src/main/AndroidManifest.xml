@@ -23,28 +23,28 @@
         </activity>
         <activity android:name="com.roadsidepoppies.indietracks.guide2017.IndietracksMainActivity">
             <intent-filter>
-                <action android:name="com.roadsidepoppies.indietracks.guide2016.INDIETRACKS" />
+                <action android:name="com.roadsidepoppies.indietracks.guide2017.INDIETRACKS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="com.roadsidepoppies.indietracks.guide2017.InfoActivity">
             <intent-filter>
-                <action android:name="com.roadsidepoppies.indietracks.guide2016.INFO" />
+                <action android:name="com.roadsidepoppies.indietracks.guide2017.INFO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="com.roadsidepoppies.indietracks.guide2017.settings.SettingsActivity">
             <intent-filter>
-                <action android:name="com.roadsidepoppies.indietracks.guide2016.SETTINGS" />
+                <action android:name="com.roadsidepoppies.indietracks.guide2017.SETTINGS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <receiver android:name="com.roadsidepoppies.indietracks.guide2017.alarm.EventAlarmReceiver">
             <intent-filter>
-                <action android:name="com.roadsidepoppies.indietracks.guide2016.EVENTALARM"></action>
+                <action android:name="com.roadsidepoppies.indietracks.guide2017.EVENTALARM"></action>
             </intent-filter>
         </receiver>
         <receiver android:name="com.roadsidepoppies.indietracks.guide2017.alarm.DeviceRebootReceiver">
