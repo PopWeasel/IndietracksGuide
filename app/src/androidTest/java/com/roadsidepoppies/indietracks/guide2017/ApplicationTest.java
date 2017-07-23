@@ -1,4 +1,4 @@
-package com.roadsidepoppies.indietracks.guide2016;
+package com.roadsidepoppies.indietracks.guide2017;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
