@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.roadsidepoppies.indietracks.guide2017">
+    package="com.roadsidepoppies.indietracks.guide">
 
     <application
-        android:name="com.roadsidepoppies.indietracks.guide2017.IndietracksApplication"
+        android:name="com.roadsidepoppies.indietracks.guide.IndietracksApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_indietracks"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name="com.roadsidepoppies.indietracks.guide2017.InitialiseDataActivity"
+            android:name="com.roadsidepoppies.indietracks.guide.InitialiseDataActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:noHistory="true"
@@ -21,33 +21,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.roadsidepoppies.indietracks.guide2017.IndietracksMainActivity">
+        <activity android:name="com.roadsidepoppies.indietracks.guide.IndietracksMainActivity">
             <intent-filter>
                 <action android:name="com.roadsidepoppies.indietracks.guide2017.INDIETRACKS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.roadsidepoppies.indietracks.guide2017.InfoActivity">
+        <activity android:name="com.roadsidepoppies.indietracks.guide.InfoActivity">
             <intent-filter>
                 <action android:name="com.roadsidepoppies.indietracks.guide2017.INFO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.roadsidepoppies.indietracks.guide2017.settings.SettingsActivity">
+        <activity android:name="com.roadsidepoppies.indietracks.guide.settings.SettingsActivity">
             <intent-filter>
                 <action android:name="com.roadsidepoppies.indietracks.guide2017.SETTINGS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <receiver android:name="com.roadsidepoppies.indietracks.guide2017.alarm.EventAlarmReceiver">
+        <receiver android:name="com.roadsidepoppies.indietracks.guide.alarm.EventAlarmReceiver">
             <intent-filter>
                 <action android:name="com.roadsidepoppies.indietracks.guide2017.EVENTALARM"></action>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.roadsidepoppies.indietracks.guide2017.alarm.DeviceRebootReceiver">
+        <receiver android:name="com.roadsidepoppies.indietracks.guide.alarm.DeviceRebootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"></action>
             </intent-filter>

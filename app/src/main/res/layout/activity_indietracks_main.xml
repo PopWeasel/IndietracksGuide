@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.roadsidepoppies.indietracks.guide2017.IndietracksMainActivity">
+    tools:context="com.roadsidepoppies.indietracks.guide.IndietracksMainActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/indietracks_toolbar"

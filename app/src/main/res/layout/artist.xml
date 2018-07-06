@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.roadsidepoppies.indietracks.guide2017.ArtistFragment">
+    tools:context="com.roadsidepoppies.indietracks.guide.ArtistFragment">
 
     <TextView
         android:layout_width="fill_parent"

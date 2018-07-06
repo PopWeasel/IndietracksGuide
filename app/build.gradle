@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "24.0.0"
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.roadsidepoppies.indietracks.indietracksguide"
-        minSdkVersion 15
+        applicationId "com.roadsidepoppies.indietracks.guide2018"
+        minSdkVersion 19
         targetSdkVersion 23
-        versionCode 3
-        versionName "1.2"
+        versionCode 1
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -24,10 +24,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:support-v13:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:support-v4:23.4.0'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    api 'com.android.support:appcompat-v7:23.4.0'
+    api 'com.android.support:support-v13:23.4.0'
+    api 'com.android.support:design:23.4.0'
+    api 'com.android.support:support-v4:23.4.0'
 }
