@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:elevation="4dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat"
-        android:backgroundTint="@color/green"/>
+        android:backgroundTint="@color/pink"/>
 
     <FrameLayout
         android:id="@+id/infoContent"

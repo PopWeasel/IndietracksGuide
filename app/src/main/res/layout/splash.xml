@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.roadsidepoppies.indietracks.guide.InitialiseDataActivity">
+    tools:context="com.roadsidepoppies.indietracks.guide2018.InitialiseDataActivity">
 
     <ImageView
         android:layout_width="fill_parent"
@@ -14,7 +14,7 @@
         android:clickable="false"
         android:src="@drawable/teamindietracks"
         android:layout_weight="0.4"
-        android:background="@color/green"
-        android:contentDescription="Indietracks 2017 Logo"
+        android:background="@color/pink"
+        android:contentDescription="Indietracks 2018 Logo"
         />
 </LinearLayout>

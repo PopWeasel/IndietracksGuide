@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.roadsidepoppies.indietracks.guide.IndietracksMainActivity">
+    tools:context="com.roadsidepoppies.indietracks.guide2018.IndietracksMainActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/indietracks_toolbar"
@@ -14,7 +14,7 @@
         android:background="@color/white"
         android:elevation="4dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat"
-        android:backgroundTint="@color/green" />
+        android:backgroundTint="@color/pink" />
 
     <FrameLayout
         android:id="@+id/indietacks_content"
